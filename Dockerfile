@@ -69,12 +69,12 @@ RUN pip3 install --upgrade pip setuptools
 ENV PATH="/home/bot/bin:$PATH"
 
 # make directory
-RUN mkdir /AloneRobot/
-COPY . /AloneRobot
-WORKDIR /AloneRobot
+RUN mkdir /ViranyaRobot/
+COPY . /ViranyaRobot
+WORKDIR /ViranyaRobot
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","AloneRobot"]
+CMD ["python3","-m","ViranyaRobot"]
