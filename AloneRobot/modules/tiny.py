@@ -15,7 +15,7 @@ async def _(event):
         return
     kontol = await event.reply("`Processing tiny...`")
     ik = await tbot.download_media(reply)
-    im1 = Image.open("AloneRobot/resources/blank_background.png")
+    im1 = Image.open("ViranyaRobot/resources/blank_background.png")
     if ik.endswith(".tgs"):
         await tbot.download_media(reply, "blank_background.tgs")
         os.system("lottie_convert.py blank_background.tgs json.json")
@@ -83,5 +83,5 @@ __mod_name__ = "⚡Tɪɴʏ⚡"
 __help__ = """
 ❍  /tiny *:* ʀᴇᴘʟʏ ᴀ sᴛɪᴄᴋᴇʀ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ
 
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
 """
