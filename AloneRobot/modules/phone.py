@@ -22,7 +22,7 @@ def phone(update, context):
     args = update.effective_message.text.split(None, 1)
     information = args[1]
     number = information
-    key = "f66950368a61ebad3cba9b5924b4532d"
+    key = "f200d025-0f94-42a0-8454-f3ebbfc76bd1"
     api = (
         "http://apilayer.net/api/validate?access_key="
         + key
