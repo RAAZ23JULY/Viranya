@@ -9,7 +9,7 @@ from AloneRobot import MONGO_DB_URI, telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Alone"]
+db = client["Viranya"]
 gbanned = db.gban
 
 
