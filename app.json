@@ -1,5 +1,5 @@
 {
-      "name": "𝄟ॐ❥𝗔𝗟𝗢𝗡𝗘🍷𝗥𝗢𝗕𝗢𝗧⏤͟͟͞❥͜͡𝄟⃟🥀",
+      "name": "𝄟ॐ❥𝗩𝗜𝗥𝗔𝗡𝗬𝗔🍷𝗥𝗢𝗕𝗢𝗧⏤͟͟͞❥͜͡𝄟⃟🥀",
       "description": "𝐓𝐆 𝐆𝐑𝐎𝐔𝐏 𝐌𝐀𝐍𝐀𝐆𝐄𝐑 𝐑𝐎𝐁𝐎𝐓.",
       "logo": "https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
       "keywords": [
@@ -8,7 +8,7 @@
          "group",
          "manager"
       ],   
-   "repository": "https://github.com/AloneXBot/AloneRobot",
+   "repository": "https://te.legra.ph/file/ac5e42f40c7faed1ba250.jpg",
    "stack": "heroku-22",
    "addons": [
       {
@@ -22,12 +22,12 @@
       "API_ID": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": "14281524"
+         "value": "20106897"
       },
       "API_HASH": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": "1a2e3f00651f595c53c36140abc5d0c9"
+         "value": "1c786b7eef6fc4ad5b38cc4348b67d52"
       },
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
@@ -50,22 +50,22 @@
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://bsdk:betichod@cluster0.fgj1r9z.mongodb.net/?retryWrites=true&w=majority"
+         "value": "mongodb+srv://jiya:jiyavijay@cluster0.z33z7v1.mongodb.net/?retryWrites=true&w=majority"
       },
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "6079943111"
+         "value": "6081787128"
       },
       "START_IMG": {
          "description": "Telegraph link of the image which will be shown at start command.",
          "required": true,
-         "value": "https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg"
+         "value": "https://te.legra.ph/file/ac5e42f40c7faed1ba250.jpg"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit.",
          "required": true,
-         "value": "AlonesHeaven"
+         "value": "VillenOpMusic"
       },
       "TOKEN": {
          "description": "Get bot token from @BotFather on TG",
