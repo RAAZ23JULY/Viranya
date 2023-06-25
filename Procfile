@@ -1,2 +1,2 @@
-worker: python3 -m AloneRobot
+worker: python3 -m ViranyaRobot
 ps:scale worker=1
