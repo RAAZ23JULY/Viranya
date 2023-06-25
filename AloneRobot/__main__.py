@@ -1099,7 +1099,7 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+                animation="https://telegra.ph/file/a4f6ba18ad6ce0b5251d1.jpg",
                 caption=f"""
 {dispatcher.bot.first_name}
 ╔═════ஜ۩۞۩ஜ═════╗
