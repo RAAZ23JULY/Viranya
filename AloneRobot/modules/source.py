@@ -20,11 +20,11 @@ async def repo(client, message):
 
 ╔═════ஜ۩۞۩ஜ════╗
 
-♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [𝗔𝗟𝗢𝗡𝗘](https://t.me/ALONE_WAS_BOT)♨️
+♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [𝗩𝗜𝗥𝗔𝗡𝗬𝗔](https://t.me/ViLLenOp09)♨️
   
 ╚═════ஜ۩۞۩ஜ════╝
 
-**[𝗔𝗟𝗢𝗡𝗘 𝗥𝗢𝗕𝗢𝗧](t.me/{dispatcher.bot.username}) sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
+**[𝗩𝗜𝗥𝗔𝗡𝗬𝗔 𝗥𝗢𝗕𝗢𝗧](t.me/{dispatcher.bot.username}) sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -34,7 +34,7 @@ async def repo(client, message):
                     ),
                     InlineKeyboardButton(
                         "📍ʀᴇᴘᴏ📍",
-                        url="https://github.com/TeamAloneOp/AloneRobot/fork",
+                        url="https://github.com/ZexxySnowy/ViranyaRobot",
                     ),
                 ]
             ]
