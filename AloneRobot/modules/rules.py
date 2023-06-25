@@ -160,7 +160,7 @@ __help__ = """
  ‣ `/setrules <your rules here>`*:* set the rules for this chat.
  ‣ `/clearrules`*:* clear the rules for this chat.
 
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
 """
 
 __mod_name__ = "⚡Rᴜʟᴇs⚡"
