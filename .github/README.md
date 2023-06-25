@@ -14,11 +14,11 @@
 
 
 <h2 align="center">
-    𝄟🌹𝗔𝗟𝗢𝗡𝗘 𝗥𝗢𝗕𝗢𝗧🌹​​​​​𝄟​​​​​
+    𝄟🌹𝗩𝗜𝗥𝗬𝗔𝗡𝗔 𝗥𝗢𝗕𝗢𝗧🌹​​​​​𝄟​​​​​
 </h2>
 
 <p align="center">
-  <img src="https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg">
+  <img src="https://te.legra.ph/file/7e50c377a47bd570aaf2d.jpg">
 </p>
 
 ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [𝄟❥𝗔𝗟𝗢𝗡𝗘🍷𝗥𝗢𝗕𝗢𝗧𝄟⃟🥀](https://t.me/AloneXMusicBot)
