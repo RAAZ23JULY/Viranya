@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open("{}/AloneRobot/{}".format(os.getcwd(), config), "r") as json_file:
+    with open("{}/ViranyaRobot/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
 
 
@@ -14,19 +14,19 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = "14050586" # integer value, dont use ""
-    API_HASH = "42a60d9c657b106370c79bb0a8ac560c"
+    API_ID = "20106897" # integer value, dont use ""
+    API_HASH = "1c786b7eef6fc4ad5b38cc4348b67d52"
     TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = "6079943111" # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "ALONE_WAS_BOT"
-    SUPPORT_CHAT = "AlonesHeaven"  # Your own group for support, do not add the @
+    OWNER_ID = "6081787128" # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "ViLLenOp09"
+    SUPPORT_CHAT = "VillenOpMusic"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001603822916
+        --1001783351760
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001603822916
+        --1001783351760
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    MONGO_DB_URI= "mongodb+srv://bsdk:betichod@cluster0.fgj1r9z.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_DB_URI= "mongodb+srv://jiya:jiyavijay@cluster0.z33z7v1.mongodb.net/?retryWrites=true&w=majority"
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
     LOAD = []
