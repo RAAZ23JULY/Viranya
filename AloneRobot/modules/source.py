@@ -9,7 +9,7 @@ from telethon import __version__ as s
 from AloneRobot import OWNER_ID, dispatcher
 from AloneRobot import pbot as client
 
-Alone = "https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg"
+Alone = "https://telegra.ph/file/0651a73f0b3bc1b11dc5d.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
