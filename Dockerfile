@@ -70,8 +70,8 @@ ENV PATH="/home/bot/bin:$PATH"
 
 # make directory
 RUN mkdir /ViranyaRobot/
-COPY . /ViranyaRobot
-WORKDIR /ViranyaRobot
+COPY . /AloneRobot
+WORKDIR /AloneRobot
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
