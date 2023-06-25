@@ -1,5 +1,5 @@
 
 @echo off
-TITLE Vianya Robot
+TITLE Alone Robot
 :: Enables virtual env mode and then starts Alone
-env\scripts\activate.bat && py -m VianyaRobot
+env\scripts\activate.bat && py -m AloneRobot
