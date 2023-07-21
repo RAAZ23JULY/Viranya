@@ -64,5 +64,5 @@ __help__ = """
 
 ❍ /write <ᴛᴇxᴛ> *:* ᴡʀɪᴛᴇs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ.
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
  """

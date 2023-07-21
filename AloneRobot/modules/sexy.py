@@ -84,7 +84,7 @@ __help__ = """
 
 ➻ /cute - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴄᴜᴛᴇɴᴇꜱꜱ
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
 __mod_name__ = "⚡Sᴇᴍxʏ⚡"

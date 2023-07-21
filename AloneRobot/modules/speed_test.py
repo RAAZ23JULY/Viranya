@@ -63,7 +63,7 @@ dispatcher.add_handler(SPEED_TEST_CALLBACKHANDLER)
 __help__ = """
 » /speedtest *:* ʀᴜɴs ᴀ sᴘᴇᴇᴅᴛᴇsᴛ ᴀɴᴅ ᴄʜᴇᴄᴋ ᴛʜᴇ sᴇʀᴠᴇʀ sᴘᴇᴇᴅ.
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
 __mod_name__ = "⚡SᴘᴇᴇᴅTᴇsᴛ⚡​"

@@ -274,7 +274,7 @@ __help__ = """
    • ɪғ ᴅᴏɴᴇ ɪɴ ᴘᴍ, ᴛᴏɢɢʟᴇs ʏᴏᴜʀ sᴛᴀᴛᴜs.
    • ɪғ ɪɴ ɢʀᴏᴜᴘ, ᴛᴏɢɢʟᴇs ᴛʜᴀᴛ ɢʀᴏᴜᴘs's sᴛᴀᴛᴜs.
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
 SETTING_HANDLER = CommandHandler("reports", report_setting)

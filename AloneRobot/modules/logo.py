@@ -247,7 +247,7 @@ async def lego(event):
     quew = event.pattern_match.group(1)
     if event.sender_id != OWNER_ID and not quew:
         await event.reply(
-            "ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ʙᴀʙʏ​ !\nExample : `/logo <ALONE>`"
+            "ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ʙᴀʙʏ​ !\nExample : `/logo <VIRANYA>`"
         )
         return
     pesan = await event.reply("**ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ʟᴏɢᴏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ sᴇᴄ​...**")
@@ -257,7 +257,7 @@ async def lego(event):
         img = Image.open(io.BytesIO(requests.get(randc).content))
         draw = ImageDraw.Draw(img)
         image_widthz, image_heightz = img.size
-        fnt = glob.glob("./AloneRobot/resources/fonts/*")
+        fnt = glob.glob("./Viranya.png/resources/fonts/*")
         randf = random.choice(fnt)
         font = ImageFont.truetype(randf, 120)
         w, h = draw.textsize(text, font=font)
@@ -274,7 +274,7 @@ async def lego(event):
         draw.text(
             (x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black"
         )
-        fname = "Alone.png"
+        fname = "Viranya.png"
         img.save(fname, "png")
         await telethn.send_file(
             event.chat_id,
@@ -290,7 +290,7 @@ async def lego(event):
         img = Image.open(io.BytesIO(requests.get(randc).content))
         draw = ImageDraw.Draw(img)
         image_widthz, image_heightz = img.size
-        fnt = glob.glob("./AloneRobot/resources/fonts/*")
+        fnt = glob.glob("./ViranyaRobot/resources/fonts/*")
         randf = random.choice(fnt)
         font = ImageFont.truetype(randf, 120)
         w, h = draw.textsize(text, font=font)
@@ -307,7 +307,7 @@ async def lego(event):
         draw.text(
             (x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black"
         )
-        fname = "Alone.png"
+        fname = "Viranya.png"
         img.save(fname, "png")
         await telethn.send_file(
             event.chat_id,

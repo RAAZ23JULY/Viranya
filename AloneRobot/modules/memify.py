@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 from AloneRobot import telethn as bot
 from AloneRobot.events import register
 
-Credit = "Alone"
+Credit ="Villain"
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -69,7 +69,7 @@ async def drawText(image_path, text):
 
     else:
 
-        fnt = "./AloneRobot/resources/default.ttf"
+        fnt = "./ViranyaRobot/resources/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 
@@ -201,4 +201,4 @@ __mod_name__ = "📍ᴍᴍғ📍"
 __help__ = """ 
 ⫸ /mmf <ᴛᴇxᴛ> ◉ ᴛᴏ ᴍᴇᴍɪғʏ
 
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆ """
+☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆ """

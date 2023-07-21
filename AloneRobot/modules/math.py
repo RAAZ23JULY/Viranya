@@ -115,7 +115,7 @@ def log(update: Update, context: CallbackContext):
 
 __help__ = """
 *ᴍᴀᴛʜs*
-sᴏʟᴠᴇs ᴄᴏᴍᴘʟᴇx ᴍᴀᴛʜ ᴘʀᴏʙʟᴇᴍs ᴜsɪɴɢ ʜᴛᴛᴘs://ɴᴇᴡᴛᴏɴ.ɴᴏᴡ.sʜ
+sᴏʟᴠᴇs ᴄᴏᴍᴘʟᴇx ᴍᴀᴛʜ ᴘʀᴏʙʟᴇᴍs ᴜsɪɴɢhttps://quickmath.com/
 ❍ /math *:* ᴍᴀᴛʜ `/ᴍᴀᴛʜ 2^2+2(2)`
 ❍ /factor *:* ғᴀᴄᴛᴏʀ `/ғᴀᴄᴛᴏʀ x^2 + 2x`
 ❍ /derive *:* ᴅᴇʀɪᴠᴇ `/ᴅᴇʀɪᴠᴇ x^2+2x`

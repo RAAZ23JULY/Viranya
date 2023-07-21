@@ -341,7 +341,7 @@ __help__ = """
  ❍ /pat *:* ᴘᴀᴛs ᴀ ᴜsᴇʀ, ᴏʀ ɢᴇᴛ ᴘᴀᴛᴛᴇᴅ
  ❍ /8ball *:* ᴘʀᴇᴅɪᴄᴛs ᴜsɪɴɢ 8ʙᴀʟʟ ᴍᴇᴛʜᴏᴅ 
 
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
+☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)

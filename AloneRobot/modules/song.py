@@ -84,4 +84,4 @@ __help__ = """
 /song ᴛᴏ  ᴅᴏᴡɴʟᴏᴀᴅ   ᴀɴʏ  sᴏɴɢ 
 /music ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ  sᴏɴɢ
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆"""
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆"""

@@ -110,4 +110,4 @@ __help_ = """
 /video to download video song
 /vsong to download video song 
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆"""
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆"""

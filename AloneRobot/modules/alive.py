@@ -54,10 +54,10 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.8)
     await m.reply_photo(
         lol,
-        caption=f"""**🌷ʜᴇʏ, ɪ ᴀᴍ 『[𝗔𝗟𝗢𝗡𝗘 𝗥𝗢𝗕𝗢𝗧](f"t.me/{BOT_USERNAME}")』🎄**
+        caption=f"""**🌷ʜᴇʏ, ɪ ᴀᴍ 『[viranya  𝗥𝗢𝗕𝗢𝗧](f"t.me/{BOT_USERNAME}")』🎄**
    ╔═════ஜ۩۞۩ஜ════╗
 
-   ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [𝗔𝗟𝗢𝗡𝗘](https://t.me/ALONE_WAS_BOT)♨️
+   ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [villain](https://t.me@Epicstarr)♨️
 
    ╚═════ஜ۩۞۩ஜ════╝""",
         reply_markup=InlineKeyboardMarkup(Alone),
@@ -68,4 +68,5 @@ __help__ = """
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
 » /alive*:* ᴛᴏ ᴄʜᴇᴀᴋ ❓  ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ?
 
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""
+☆............𝙱𝚈 » [villain](https://t.me/
+ @Epicstarr)...........☆"""

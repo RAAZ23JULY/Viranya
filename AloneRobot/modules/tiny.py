@@ -83,5 +83,5 @@ __mod_name__ = "⚡Tɪɴʏ⚡"
 __help__ = """
 ❍  /tiny *:* ʀᴇᴘʟʏ ᴀ sᴛɪᴄᴋᴇʀ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """

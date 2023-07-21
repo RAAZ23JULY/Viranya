@@ -15,7 +15,7 @@ def anime_quote():
     response = requests.get(url)
     try:
         dic = json.loads(response.text)
-    except Exception:
+    except :
         pass
     quote = dic["quote"]
     character = dic["character"]
@@ -145,7 +145,7 @@ __help__ = """
 /quote :- ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇs
 /animequotes :- ᴡʀɪᴛᴇ ᴀɴɪᴍᴇǫᴜᴏᴛᴇs
 
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
+☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆
  """
 
 __command_list__ = [

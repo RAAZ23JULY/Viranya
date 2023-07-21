@@ -16,7 +16,7 @@ async def msg(event):
     try:
         a = country.info()
     except:
-        await event.reply("Country Not Available Currently")
+        await event.reply("country information")
     name = a.get("name")
     bb = a.get("altSpellings")
     hu = ""
@@ -115,6 +115,6 @@ __help__ = """
  ❍ /ᴄᴏᴜɴᴛʀʏ <ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ>*:* ɢᴀᴛʜᴇʀɪɴɢ ɪɴғᴏ ᴀʙᴏᴜᴛ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛʀʏ
 
 
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""
+☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆"""
 
 __mod_name__ = "♨️Cᴏᴜɴᴛʀʏ♨️"

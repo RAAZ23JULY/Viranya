@@ -52,7 +52,7 @@ async def wall(client, message):
 🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {message.from_user.mention}
 ❄ **ᴅᴏᴡɴʟᴏᴀᴅ :** `{murl}`
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
         await m.delete()
         await client.send_photo(

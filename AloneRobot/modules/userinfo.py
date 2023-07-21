@@ -571,7 +571,7 @@ __help__ = """
  ❍ /info *:* ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜsᴇʀ. 
  ❍ /myinfo *:* sʜᴏᴡs ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴇ ᴜsᴇʀ ᴡʜᴏ sᴇɴᴛ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ.
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/ViLLenOp09)............☆
+☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
