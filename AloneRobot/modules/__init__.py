@@ -1,4 +1,4 @@
-from MukeshRobot import LOAD, LOGGER, NO_LOAD
+from AloneRobot import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
