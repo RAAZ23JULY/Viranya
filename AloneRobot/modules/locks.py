@@ -14,20 +14,20 @@ from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-import MukeshRobot.modules.sql.locks_sql as sql
-from MukeshRobot import DRAGONS, LOGGER, dispatcher
-from MukeshRobot.modules.connection import connected
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
-from MukeshRobot.modules.helper_funcs.alternate import send_message, typing_action
-from MukeshRobot.modules.helper_funcs.chat_status import (
+import AloneRobot.modules.sql.locks_sql as sql
+from AloneRobot import DRAGONS, LOGGER, dispatcher
+from AloneRobot.modules.connection import connected
+from AloneRobot.modules.disable import DisableAbleCommandHandler
+from AloneRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AloneRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_bot_admin,
     is_user_admin,
     user_admin,
     user_not_admin,
 )
-from MukeshRobot.modules.log_channel import loggable
-from MukeshRobot.modules.sql.approve_sql import is_approved
+from AloneRobot.modules.log_channel import loggable
+from AloneRobot.modules.sql.approve_sql import is_approved
 
 ad = AlphabetDetector()
 
@@ -588,9 +588,11 @@ __help__ = """
 *ɴᴏᴛᴇ:*
  • ᴜɴʟᴏᴄᴋɪɴɢ ᴘᴇʀᴍɪssɪᴏɴ *ɪɴғᴏ* ᴡɪʟʟ ᴀʟʟᴏᴡ ᴍᴇᴍʙᴇʀs (ɴᴏɴ-ᴀᴅᴍɪɴs) ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ɪɴғᴏʀᴍᴀᴛɪᴏɴ, sᴜᴄʜ ᴀs ᴛʜᴇ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴏʀ ᴛʜᴇ ɢʀᴏᴜᴘ ɴᴀᴍᴇ
  • ᴜɴʟᴏᴄᴋɪɴɢ ᴘᴇʀᴍɪssɪᴏɴ *ᴘɪɴ* ᴡɪʟʟ ᴀʟʟᴏᴡ ᴍᴇᴍʙᴇʀs (ɴᴏɴ-ᴀᴅᴍɪɴs) ᴛᴏ ᴘɪɴ ᴀ ᴍᴇssᴀɢᴇ ɪɴ ᴀ ɢʀᴏᴜᴘ
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
-__mod_name__ = "✰ʟᴏᴄᴋs"
+__mod_name__ = "📍Lᴏᴄᴋs📍"
 
 LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes)
 LOCK_HANDLER = CommandHandler("lock", lock, pass_args=True)  # , filters=Filters.group)

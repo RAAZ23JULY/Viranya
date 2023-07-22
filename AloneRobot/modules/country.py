@@ -1,9 +1,9 @@
 import flag
 from countryinfo import CountryInfo
 
-from MukeshRobot import BOT_USERNAME
-from MukeshRobot import telethn as borg
-from MukeshRobot.events import register
+from AloneRobot import BOT_USERNAME
+from AloneRobot import telethn as borg
+from AloneRobot.events import register
 
 
 @register(pattern="^/country (.*)")
@@ -98,7 +98,7 @@ async def msg(event):
 <b>ᴛᴏᴛᴀʟ ʟᴇᴠᴇʟ ᴅᴏᴍᴀɪɴ :</b> {lanester}
 <b>ᴡɪᴋɪᴘᴇᴅɪᴀ:</b> {wiki}
 
-<u>ɪɴғᴏʀᴍᴀᴛɪᴏɴ ɢᴀᴛʜᴇʀᴇᴅ ʙʏ @{BOT_USERNAME}</u>
+<u>ɪɴғᴏʀᴍᴀᴛɪᴏɴ ɢᴀᴛʜᴇʀᴇᴅ ʙʏ {BOT_USERNAME}</u>
 """
 
     await borg.send_message(
@@ -112,7 +112,9 @@ async def msg(event):
 __help__ = """
 ɪ ᴡɪʟʟ ɢɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴄᴏᴜɴᴛʀʏ
 
- ❍ /country <ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ>*:* ɢᴀᴛʜᴇʀɪɴɢ ɪɴғᴏ ᴀʙᴏᴜᴛ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛʀʏ
-"""
+ ❍ /ᴄᴏᴜɴᴛʀʏ <ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ>*:* ɢᴀᴛʜᴇʀɪɴɢ ɪɴғᴏ ᴀʙᴏᴜᴛ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛʀʏ
 
-__mod_name__ = "✰ᴄᴏᴜɴᴛʀʏ✰"
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""
+
+__mod_name__ = "♨️Cᴏᴜɴᴛʀʏ♨️"

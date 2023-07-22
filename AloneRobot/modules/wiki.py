@@ -3,8 +3,8 @@ from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 from wikipedia.exceptions import DisambiguationError, PageError
 
-from MukeshRobot import dispatcher
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from AloneRobot import dispatcher
+from AloneRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -58,5 +58,7 @@ dispatcher.add_handler(WIKI_HANDLER)
 
 __help__ = """
 » /wiki (text) *:* sᴇᴀʀᴄʜs ᴀʙᴏᴜᴛ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴏɴ ᴡɪᴋɪᴘᴇᴅɪᴀ.
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
-__mod_name__ = "✰ᴡɪᴋɪ✰"
+__mod_name__ = "⚡Wɪᴋɪ⚡"

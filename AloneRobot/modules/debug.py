@@ -5,8 +5,8 @@ from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telethon import events
 
-from MukeshRobot import dispatcher, telethn
-from MukeshRobot.modules.helper_funcs.chat_status import dev_plus
+from AloneRobot import dispatcher, telethn
+from AloneRobot.modules.helper_funcs.chat_status import dev_plus
 
 DEBUG_MODE = False
 
@@ -66,9 +66,11 @@ dispatcher.add_handler(LOG_HANDLER)
 DEBUG_HANDLER = CommandHandler("debug", debug)
 dispatcher.add_handler(DEBUG_HANDLER)
 
-__mod_name__ = "✰ᴅᴇʙᴜɢ✰"
+__mod_name__ = "♨️ᴅᴇʙᴜɢ♨️"
 __help__ = """
 /logs    ᴛᴏ ɢᴇᴛ ʜᴇʀᴜᴋᴏ ʟᴏɢs
-/debug ᴛᴏ ᴏɴ / ᴏғғ ᴅᴇʙᴜɢ """
+/debug ᴛᴏ ᴏɴ / ᴏғғ ᴅᴇʙᴜɢ 
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""
 __command_list__ = ["debug"]
 __handlers__ = [DEBUG_HANDLER]

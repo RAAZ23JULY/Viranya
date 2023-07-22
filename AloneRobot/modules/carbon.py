@@ -1,8 +1,8 @@
 from pyrogram import filters
 
-from MukeshRobot import pbot
-from MukeshRobot.utils.errors import capture_err
-from MukeshRobot.utils.functions import make_carbon
+from AloneRobot import pbot
+from AloneRobot.utils.errors import capture_err
+from AloneRobot.utils.functions import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
@@ -20,12 +20,12 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-__mod_name__ = "✰ᴄᴀʀʙᴏɴ✰"
+__mod_name__ = "♨️Cᴀʀʙᴏɴ♨️"
 
 __help__ = """
-
 ᴍᴀᴋᴇs ᴀ ᴄᴀʀʙᴏɴ ᴏғ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜ.
 
 ❍ /carbon *:* ᴍᴀᴋᴇs ᴄᴀʀʙᴏɴ ɪғ ʀᴇᴩʟɪᴇᴅ ᴛᴏ ᴀ ᴛᴇxᴛ
 
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
  """

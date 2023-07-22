@@ -5,8 +5,8 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from MukeshRobot import TIME_API_KEY, dispatcher
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from AloneRobot import TIME_API_KEY, dispatcher
+from AloneRobot.modules.disable import DisableAbleCommandHandler
 
 
 def generate_time(to_find: str, findtype: List[str]) -> str:
@@ -98,12 +98,14 @@ __help__ = """
  ❍ ⏰ [ᴛɪᴍᴇᴢᴏɴᴇs ʟɪsᴛ](ʜᴛᴛᴘs://ᴇɴ.ᴡɪᴋɪᴘᴇᴅɪᴀ.ᴏʀɢ/ᴡɪᴋɪ/ʟɪsᴛ_ᴏғ_ᴛᴢ_ᴅᴀᴛᴀʙᴀsᴇ_ᴛɪᴍᴇ_ᴢᴏɴᴇs)
 
 💡 ᴇx:- /time ɪɴ *:* ɪᴛ ᴡɪʟʟ sʜᴏᴡs ɪɴᴅɪᴀɴ ᴄᴜʀʀᴇɴᴛ ᴛɪᴍᴇ ᴀɴᴅ ᴅᴀᴛᴇ..
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
 
 dispatcher.add_handler(TIME_HANDLER)
 
-__mod_name__ = "✰ᴛɪᴍᴇ✰"
+__mod_name__ = "📍Tɪᴍᴇ📍"
 __command_list__ = ["time"]
 __handlers__ = [TIME_HANDLER]

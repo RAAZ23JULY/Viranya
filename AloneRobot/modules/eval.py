@@ -9,8 +9,8 @@ from contextlib import redirect_stdout
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from MukeshRobot import LOGGER, dispatcher,OWNER_ID
-from MukeshRobot.modules.helper_funcs.chat_status import dev_plus
+from AloneRobot import LOGGER, dispatcher,OWNER_ID
+from AloneRobot.modules.helper_funcs.chat_status import dev_plus
 
 namespaces = {}
 
@@ -77,7 +77,7 @@ def do(func, bot, update):
 
     os.chdir(os.getcwd())
     with open(
-        os.path.join(os.getcwd(), "MukeshRobot/modules/helper_funcs/temp.txt"), "w"
+        os.path.join(os.getcwd(), "AloneRobot/modules/helper_funcs/temp.txt"), "w"
     ) as temp:
         temp.write(body)
 
@@ -134,13 +134,12 @@ dispatcher.add_handler(EVAL_HANDLER)
 dispatcher.add_handler(EXEC_HANDLER)
 dispatcher.add_handler(CLEAR_HANDLER)
 
-__mod_name__ = "✰ᴇᴠᴀʟ✰"
+__mod_name__ = "♨️ᴇᴠᴀʟ♨️"
 __help__ = """
 ★ᴏᴡɴᴇʀ ᴄᴍᴅ ★
-
-©️ ʙʏ ᯾ [ᴀʟᴏɴᴇ](f"tg://user?id={OWNER_ID}"))
-
 ★ /eval :- to evaluate simple code
 ★ /ex :-  to execute code
 ★ /clear :- to run clear cmd
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """

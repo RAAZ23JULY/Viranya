@@ -2,10 +2,10 @@ import asyncio
 
 from pyrogram import filters
 
-from MukeshRobot import OWNER_ID, pbot
-from MukeshRobot.utils.admins import can_change_info
-from MukeshRobot.utils.errors import capture_err
-from MukeshRobot.utils.mongo import (
+from AloneRobot import OWNER_ID, pbot
+from AloneRobot.utils.admins import can_change_info
+from AloneRobot.utils.errors import capture_err
+from AloneRobot.utils.mongo import (
     alpha_to_int,
     get_karma,
     get_karmas,
@@ -16,7 +16,7 @@ from MukeshRobot.utils.mongo import (
     update_karma,
 )
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|mukesh|thank you|gud|thankyou|love|pro)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|Alone|thank you|gud|thankyou|love|pro)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎|💔|noob|weak|fuck off|nub|gey|mf)$"
 
 

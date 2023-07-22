@@ -3,8 +3,8 @@ import os
 import cv2
 from PIL import Image
 
-from MukeshRobot import telethn as tbot
-from MukeshRobot.events import register
+from AloneRobot import telethn as tbot
+from AloneRobot.events import register
 
 
 @register(pattern="^/tiny ?(.*)")
@@ -15,7 +15,7 @@ async def _(event):
         return
     kontol = await event.reply("`Processing tiny...`")
     ik = await tbot.download_media(reply)
-    im1 = Image.open("MukeshRobot/resources/blank_background.png")
+    im1 = Image.open("AloneRobot/resources/blank_background.png")
     if ik.endswith(".tgs"):
         await tbot.download_media(reply, "blank_background.tgs")
         os.system("lottie_convert.py blank_background.tgs json.json")
@@ -79,7 +79,9 @@ async def _(event):
     os.remove(ik)
 
 
-__mod_name__ = "✰ᴛɪɴʏ✰"
+__mod_name__ = "⚡Tɪɴʏ⚡"
 __help__ = """
 ❍  /tiny *:* ʀᴇᴘʟʏ ᴀ sᴛɪᴄᴋᴇʀ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """

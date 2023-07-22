@@ -3,8 +3,8 @@ import random
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-from MukeshRobot import dispatcher
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from AloneRobot import dispatcher
+from AloneRobot.modules.disable import DisableAbleCommandHandler
 
 reactions = [
     "( ͡° ͜ʖ ͡°)",

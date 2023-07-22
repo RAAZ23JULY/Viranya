@@ -25,7 +25,7 @@ GIFS = [
     "CgACAgUAAx0CU_rCTAABAjdSX1s3fq5iEJ64YeQLKI8cD7CSuSEAAlUBAAJu09hW5iqWB0hTPD4bBA",
 ]
 
-SLAP_MUKESH_TEMPLATES = (
+SLAP_ALONE_TEMPLATES = (
     "Slap me one more time and I'll mute you.",
     "Stop slapping me. REEEEEEEEEEEEEE.",
     [
@@ -192,7 +192,7 @@ PAT_STICKERS = (
     "CAACAgQAAxkBAALRXF9Xs6XmIeDbnoL1wiDky0TdX-CvAAKKAQAC1TMzC9A3CtiT2rqVGwQ",
 )
 
-PING_STRING = ("ᴀʟᴏɴᴇ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ! 🖤",)
+PING_STRING = ("ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ! 🖤",)
 
 ITEMS = (
     "cast iron skillet",

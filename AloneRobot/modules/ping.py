@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from MukeshRobot import StartTime, dispatcher
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
-from MukeshRobot.modules.helper_funcs.chat_status import sudo_plus
+from AloneRobot import StartTime, dispatcher
+from AloneRobot.modules.disable import DisableAbleCommandHandler
+from AloneRobot.modules.helper_funcs.chat_status import sudo_plus
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
@@ -80,7 +80,7 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "ᴀʟᴏɴᴇ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ! ❤️\n"
+        "ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ! ❤️\n"
         "<b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:</b> <code>{}</code>\n"
         "<b>ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
@@ -95,7 +95,7 @@ def pingall(update: Update, context: CallbackContext):
     pinged_list.insert(2, "")
     uptime = get_readable_time((time.time() - StartTime))
 
-    reply_msg = "⏱ᴘɪɴɢ ʀᴇsᴜʟᴛs ᴀʀᴇ:\n"
+    reply_msg = "⏱Ping results are:\n"
     reply_msg += "\n".join(pinged_list)
     reply_msg += "\n<b>ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(uptime)
 

@@ -15,23 +15,23 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from MukeshRobot import DRAGONS, LOGGER, dispatcher
-from MukeshRobot.modules.connection import connected
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
-from MukeshRobot.modules.helper_funcs.alternate import send_message, typing_action
-from MukeshRobot.modules.helper_funcs.chat_status import user_admin
-from MukeshRobot.modules.helper_funcs.extraction import extract_text
-from MukeshRobot.modules.helper_funcs.filters import CustomFilters
-from MukeshRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from MukeshRobot.modules.helper_funcs.misc import build_keyboard_parser
-from MukeshRobot.modules.helper_funcs.msg_types import get_filter_type
-from MukeshRobot.modules.helper_funcs.string_handling import (
+from AloneRobot import DRAGONS, LOGGER, dispatcher
+from AloneRobot.modules.connection import connected
+from AloneRobot.modules.disable import DisableAbleCommandHandler
+from AloneRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AloneRobot.modules.helper_funcs.chat_status import user_admin
+from AloneRobot.modules.helper_funcs.extraction import extract_text
+from AloneRobot.modules.helper_funcs.filters import CustomFilters
+from AloneRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from AloneRobot.modules.helper_funcs.misc import build_keyboard_parser
+from AloneRobot.modules.helper_funcs.msg_types import get_filter_type
+from AloneRobot.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
     split_quotes,
 )
-from MukeshRobot.modules.sql import cust_filters_sql as sql
+from AloneRobot.modules.sql import cust_filters_sql as sql
 
 HANDLER_GROUP = 10
 
@@ -632,7 +632,7 @@ __help__ = """
 
 """
 
-__mod_name__ = "✰ғɪʟᴛᴇʀs✰"
+__mod_name__ = "⍟ Fɪʟᴛᴇʀs ⍟"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)

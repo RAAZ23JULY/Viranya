@@ -6,11 +6,11 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
 
-import MukeshRobot.modules.fun_strings as fun_strings
-from MukeshRobot import dispatcher
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
-from MukeshRobot.modules.helper_funcs.chat_status import is_user_admin
-from MukeshRobot.modules.helper_funcs.extraction import extract_user
+import AloneRobot.modules.fun_strings as fun_strings
+from AloneRobot import dispatcher
+from AloneRobot.modules.disable import DisableAbleCommandHandler
+from AloneRobot.modules.helper_funcs.chat_status import is_user_admin
+from AloneRobot.modules.helper_funcs.extraction import extract_user
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
@@ -68,7 +68,7 @@ def slap(update: Update, context: CallbackContext):
     user_id = extract_user(message, args)
 
     if user_id == bot.id:
-        temp = random.choice(fun_strings.SLAP_MUKESH_TEMPLATES)
+        temp = random.choice(fun_strings.SLAP_Alone_TEMPLATES)
 
         if isinstance(temp, list):
             if temp[2] == "tmute":
@@ -103,7 +103,7 @@ def slap(update: Update, context: CallbackContext):
     hit = random.choice(fun_strings.HIT)
     throw = random.choice(fun_strings.THROW)
 
-    if update.effective_user.id == 1096215023:
+    if update.effective_user.id == 6079943111:
         temp = "@NeoTheKitty scratches {user2}"
 
     reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
@@ -340,6 +340,8 @@ __help__ = """
  ❍ /sanitize *:* ᴀʟᴡᴀʏs ᴜsᴇ ᴛʜɪs ʙᴇғᴏʀᴇ /ᴘᴀᴛ ᴏʀ ᴀɴʏ ᴄᴏɴᴛᴀᴄᴛ
  ❍ /pat *:* ᴘᴀᴛs ᴀ ᴜsᴇʀ, ᴏʀ ɢᴇᴛ ᴘᴀᴛᴛᴇᴅ
  ❍ /8ball *:* ᴘʀᴇᴅɪᴄᴛs ᴜsɪɴɢ 8ʙᴀʟʟ ᴍᴇᴛʜᴏᴅ 
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -372,7 +374,7 @@ dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 
-__mod_name__ = "✰ғᴜɴ✰"
+__mod_name__ = "⚡Fᴜɴ⚡"
 __command_list__ = [
     "runs",
     "slap",

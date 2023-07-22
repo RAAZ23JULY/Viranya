@@ -14,8 +14,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import MukeshRobot.modules.sql.global_bans_sql as sql
-from MukeshRobot import (
+import AloneRobot.modules.sql.global_bans_sql as sql
+from AloneRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -27,17 +27,17 @@ from MukeshRobot import (
     WOLVES,
     dispatcher,
 )
-from MukeshRobot.modules.helper_funcs.chat_status import (
+from AloneRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from MukeshRobot.modules.helper_funcs.extraction import (
+from AloneRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from MukeshRobot.modules.helper_funcs.misc import send_to_list
-from MukeshRobot.modules.sql.users_sql import get_user_com_chats
+from AloneRobot.modules.helper_funcs.misc import send_to_list
+from AloneRobot.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -493,7 +493,7 @@ def __stats__():
 def __user_info__(user_id):
     is_gbanned = sql.is_user_gbanned(user_id)
     text = "Malicious: <b>{}</b>"
-    if user_id in [6079943111]:
+    if user_id in [777000, 1087968824]:
         return ""
     if user_id == dispatcher.bot.id:
         return ""
@@ -531,7 +531,7 @@ dispatcher.add_handler(UNGBAN_HANDLER)
 dispatcher.add_handler(GBAN_LIST)
 dispatcher.add_handler(GBAN_STATUS)
 
-__mod_name__ = "✰ᴀ-sᴘᴀᴍ✰​"
+__mod_name__ = "📍AA-Sᴘᴀᴍ📍"
 __handlers__ = [GBAN_HANDLER, UNGBAN_HANDLER, GBAN_LIST, GBAN_STATUS]
 
 if STRICT_GBAN:  # enforce GBANS if this is set

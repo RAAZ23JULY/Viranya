@@ -6,7 +6,7 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from MukeshRobot import SUPPORT_CHAT, dispatcher, pbot
+from AloneRobot import SUPPORT_CHAT, dispatcher, pbot
 
 
 def get_text(message: Message) -> [None, str]:
@@ -43,7 +43,7 @@ async def wall(client, message):
             .url
         )
         img = Image.open(io.BytesIO(requests.get(randc).content))
-        fname = "mukeshrobot.png"
+        fname = "Alonerobot.png"
         img.save(fname, "png")
         caption = f"""
 💘 ᴡᴀʟʟᴩᴀᴩᴇʀ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 
@@ -51,6 +51,8 @@ async def wall(client, message):
 ✨ **ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ :** [{dispatcher.bot.first_name}](https://t.me/{dispatcher.bot.username})
 🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {message.from_user.mention}
 ❄ **ᴅᴏᴡɴʟᴏᴀᴅ :** `{murl}`
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
         await m.delete()
         await client.send_photo(

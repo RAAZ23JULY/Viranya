@@ -9,10 +9,10 @@ from telegram.ext import (
     run_async,
 )
 
-import MukeshRobot.modules.sql.global_bans_sql as gban_sql
-import MukeshRobot.modules.sql.users_sql as user_sql
-from MukeshRobot import DEV_USERS, OWNER_ID, dispatcher
-from MukeshRobot.modules.helper_funcs.chat_status import dev_plus
+import AloneRobot.modules.sql.global_bans_sql as gban_sql
+import AloneRobot.modules.sql.users_sql as user_sql
+from AloneRobot import DEV_USERS, OWNER_ID, dispatcher
+from AloneRobot.modules.helper_funcs.chat_status import dev_plus
 
 
 def get_invalid_chats(update: Update, context: CallbackContext, remove: bool = False):
@@ -147,5 +147,5 @@ BUTTON_HANDLER = CallbackQueryHandler(callback_button, pattern="db_.*")
 dispatcher.add_handler(DB_CLEANUP_HANDLER)
 dispatcher.add_handler(BUTTON_HANDLER)
 
-__mod_name__ ="✰ᴅᴀᴛᴀʙᴀsᴇ✰"
+__mod_name__ ="♨️ᴅᴀᴛᴀʙᴀsᴇ♨️"
 __handlers__ = [DB_CLEANUP_HANDLER, BUTTON_HANDLER]

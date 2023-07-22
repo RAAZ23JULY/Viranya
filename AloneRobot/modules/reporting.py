@@ -12,10 +12,10 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from MukeshRobot import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
-from MukeshRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from MukeshRobot.modules.log_channel import loggable
-from MukeshRobot.modules.sql import reporting_sql as sql
+from AloneRobot import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
+from AloneRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from AloneRobot.modules.log_channel import loggable
+from AloneRobot.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 12
 REPORT_IMMUNE_USERS = DRAGONS + TIGERS + WOLVES
@@ -273,6 +273,8 @@ __help__ = """
  ❍ /ʀᴇᴘᴏʀᴛs <ᴏɴ/ᴏғғ>*:* ᴄʜᴀɴɢᴇ ʀᴇᴘᴏʀᴛ sᴇᴛᴛɪɴɢ, ᴏʀ ᴠɪᴇᴡ ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛᴜs.
    • ɪғ ᴅᴏɴᴇ ɪɴ ᴘᴍ, ᴛᴏɢɢʟᴇs ʏᴏᴜʀ sᴛᴀᴛᴜs.
    • ɪғ ɪɴ ɢʀᴏᴜᴘ, ᴛᴏɢɢʟᴇs ᴛʜᴀᴛ ɢʀᴏᴜᴘs's sᴛᴀᴛᴜs.
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
 SETTING_HANDLER = CommandHandler("reports", report_setting)
@@ -286,7 +288,7 @@ dispatcher.add_handler(SETTING_HANDLER)
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
 
-__mod_name__ = "✰ʀᴇᴘᴏʀᴛs​✰"
+__mod_name__ = "⚡ʀᴇᴘᴏʀᴛs​⚡"
 __handlers__ = [
     (REPORT_HANDLER, REPORT_GROUP),
     (ADMIN_REPORT_HANDLER, REPORT_GROUP),

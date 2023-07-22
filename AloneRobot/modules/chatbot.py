@@ -23,10 +23,10 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import MukeshRobot.modules.sql.chatbot_sql as sql
-from MukeshRobot import BOT_ID, BOT_NAME, BOT_USERNAME, dispatcher
-from MukeshRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from MukeshRobot.modules.log_channel import gloggable
+import AloneRobot.modules.sql.chatbot_sql as sql
+from AloneRobot import BOT_ID, BOT_NAME, BOT_USERNAME, dispatcher
+from AloneRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from AloneRobot.modules.log_channel import gloggable
 
 
 @run_async
@@ -96,8 +96,8 @@ def fallen(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="ᴇɴᴀʙʟᴇ", callback_data="add_chat({})"),
-                InlineKeyboardButton(text="ᴅɪsᴀʙʟᴇ", callback_data="rm_chat({})"),
+                InlineKeyboardButton(text="📍ᴇɴᴀʙʟᴇ📍", callback_data="add_chat({})"),
+                InlineKeyboardButton(text="📍ᴅɪsᴀʙʟᴇ📍", callback_data="rm_chat({})"),
             ],
         ]
     )
@@ -144,9 +144,11 @@ __help__ = f"""
 *{BOT_NAME} ʜᴀs ᴀɴ ᴄʜᴀᴛʙᴏᴛ ᴡʜɪᴄʜ  ᴘʀᴏᴠɪᴅᴇs ʏᴏᴜ ᴀ sᴇᴇᴍɪɴɢʟᴇss ᴄʜᴀᴛᴛɪɴɢ ᴇxᴘᴇʀɪᴇɴᴄᴇ :*
 
  »  /ᴄʜᴀᴛʙᴏᴛ *:* sʜᴏᴡs ᴄʜᴀᴛʙᴏᴛ ᴄᴏɴᴛʀᴏʟ ᴘᴀɴᴇʟ
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
-__mod_name__ = "✰ᴄʜᴀᴛʙᴏᴛ✰"
+__mod_name__ = "♨️Cʜᴀᴛʙᴏᴛ♨️"
 
 
 CHATBOTK_HANDLER = CommandHandler("chatbot", fallen)

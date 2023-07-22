@@ -3,11 +3,11 @@ import requests
 url = "https://iamai.p.rapidapi.com/ask"
 import asyncio
 
-from MukeshRobot import telethn
-from MukeshRobot.events import register
+from AloneRobot import telethn
+from AloneRobot.events import register
 
 
-@register(pattern="Mukesh (.*)")
+@register(pattern="Alone (.*)")
 async def hmm(event):
     test = event.pattern_match.group(1)
     r = ('\n    "consent": true,\n    "ip": "::1",\n    "question": "{}"\n').format(

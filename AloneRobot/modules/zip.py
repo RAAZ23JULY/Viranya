@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from MukeshRobot import TEMP_DOWNLOAD_DIRECTORY
-from MukeshRobot import telethn as client
-from MukeshRobot.events import register
+from AloneRobot import TEMP_DOWNLOAD_DIRECTORY
+from AloneRobot import telethn as client
+from AloneRobot.events import register
 
 
 async def is_register_admin(chat, user):
@@ -213,6 +213,8 @@ __help__ = """
 ʜᴇʏ ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ғɪʟᴇs ʜᴇʀᴇ..
  ❍ /zip *:* ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ᴛᴏ ᴄᴏᴍᴘʀᴇss ɪᴛ ɪɴ .ᴢɪᴘ ғᴏʀᴍᴀᴛ
  ❍ /unzip *:* ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ᴛᴏ ᴅᴇᴄᴏᴍᴘʀᴇss ɪᴛ ғʀᴏᴍ ᴛʜᴇ .ᴢɪᴘ ғᴏʀᴍᴀᴛ
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
-__mod_name__ = "✰ᴢɪᴘᴘᴇʀ​✰"
+__mod_name__ = "⚡Zɪᴘᴘᴇʀ⚡"

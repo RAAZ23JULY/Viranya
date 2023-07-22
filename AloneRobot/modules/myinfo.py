@@ -5,18 +5,18 @@ from datetime import datetime
 
 from telethon import custom, events
 
-from MukeshRobot import telethn as bot
-from MukeshRobot import telethn as tgbot
-from MukeshRobot.events import register
+from AloneRobot import telethn as bot
+from AloneRobot import telethn as tgbot
+from AloneRobot.events import register
 
 edit_time = 5
-""" =======================𝐀𝐥𝐨𝐧𝐞 𝐑𝐨𝐛𝐨𝐭====================== """
+""" ======================𝗔𝗟𝗢𝗡𝗘 𝗥𝗢𝗕𝗢𝗧====================== """
 file1 = "https://telegra.ph/file/9a85d0a873e2dd80d278d.jpg"
 file2 = "https://telegra.ph/file/9e7815284031452afa9e5.jpg"
 file3 = "https://telegra.ph/file/dcc5e003287f69acea368.jpg"
 file4 = "https://telegra.ph/file/ed1ce7fee94f46b0f671e.jpg"
 file5 = "https://telegra.ph/file/701028ce085ecfa961a36.jpg"
-""" =======================𝐀𝐥𝐨𝐧𝐞 𝐑𝐨𝐛𝐨𝐭====================== """
+""" ======================𝗔𝗟𝗢𝗡𝗘 𝗥𝗢𝗕𝗢𝗧====================== """
 
 
 @register(pattern="/myinfo")
@@ -65,7 +65,7 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        LILIE = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐀𝐥𝐨𝐧𝐞 𝐍𝐞𝐭𝐰𝐨𝐫𝐤\n\n"
+        LILIE = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗔𝗟𝗢𝗡𝗘\n\n"
         LILIE += f"ғɪʀsᴛ ɴᴀᴍᴇ: {PRO.first_name} \n"
         LILIE += f"ʟᴀsᴛ ɴᴀᴍᴇ: {PRO.last_name}\n"
         LILIE += f"ʏᴏᴜ ʙᴏᴛ : {PRO.bot} \n"
@@ -78,6 +78,8 @@ async def callback_query_handler(event):
 
 
 __command_list__ = ["myinfo"]
-__mod_name__ = "✰ɪɴғᴏ✰"
+__mod_name__ = "📍ɪɴғᴏ📍"
 __help__ = """
- /myinfo  ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏ """
+ /myinfo  ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏ 
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""

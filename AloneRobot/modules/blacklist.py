@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import MukeshRobot.modules.sql.blacklist_sql as sql
-from MukeshRobot import LOGGER, dispatcher
-from MukeshRobot.modules.connection import connected
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
-from MukeshRobot.modules.helper_funcs.alternate import send_message, typing_action
-from MukeshRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from MukeshRobot.modules.helper_funcs.extraction import extract_text
-from MukeshRobot.modules.helper_funcs.misc import split_message
-from MukeshRobot.modules.helper_funcs.string_handling import extract_time
-from MukeshRobot.modules.log_channel import loggable
-from MukeshRobot.modules.sql.approve_sql import is_approved
-from MukeshRobot.modules.warns import warn
+import AloneRobot.modules.sql.blacklist_sql as sql
+from AloneRobot import LOGGER, dispatcher
+from AloneRobot.modules.connection import connected
+from AloneRobot.modules.disable import DisableAbleCommandHandler
+from AloneRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AloneRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from AloneRobot.modules.helper_funcs.extraction import extract_text
+from AloneRobot.modules.helper_funcs.misc import split_message
+from AloneRobot.modules.helper_funcs.string_handling import extract_time
+from AloneRobot.modules.log_channel import loggable
+from AloneRobot.modules.sql.approve_sql import is_approved
+from AloneRobot.modules.warns import warn
 
 BLACKLIST_GROUP = 11
 
@@ -449,7 +449,7 @@ def __stats__():
     )
 
 
-__mod_name__ = "⍟ Bʟᴀᴄᴋʟɪsᴛ ⍟"
+__mod_name__ = "♨️Bʟᴀᴄᴋʟɪsᴛ♨️"
 
 __help__ = """
 
@@ -463,6 +463,8 @@ Admin only:
  ❍ /addblacklist <triggers>*:* Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
  ❍ /unblacklist <triggers>*:* Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.
  ❍ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* Action to perform when someone sends blacklisted words.
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(

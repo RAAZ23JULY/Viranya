@@ -6,20 +6,20 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from MukeshRobot import LOGGER, TIGERS, dispatcher
-from MukeshRobot.modules.helper_funcs.chat_status import (
+from AloneRobot import LOGGER, TIGERS, dispatcher
+from AloneRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from MukeshRobot.modules.helper_funcs.extraction import (
+from AloneRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from MukeshRobot.modules.helper_funcs.string_handling import extract_time
-from MukeshRobot.modules.log_channel import loggable
+from AloneRobot.modules.helper_funcs.string_handling import extract_time
+from AloneRobot.modules.log_channel import loggable
 
 
 def check_user(user_id: int, bot: Bot, chat: Chat) -> Optional[str]:
@@ -245,6 +245,8 @@ __help__ = """
  ❍ /mute  <ᴜsᴇʀʜᴀɴᴅʟᴇ>*:* sɪʟᴇɴᴄᴇs ᴀ ᴜsᴇʀ. ᴄᴀɴ ᴀʟsᴏ ʙᴇ ᴜsᴇᴅ ᴀs ᴀ ʀᴇᴘʟʏ, ᴍᴜᴛɪɴɢ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴜsᴇʀ.
  ❍ /tmute  <ᴜsᴇʀʜᴀɴᴅʟᴇ> x(ᴍ/ʜ/ᴅ)*:* ᴍᴜᴛᴇs ᴀ ᴜsᴇʀ ғᴏʀ x ᴛɪᴍᴇ. (ᴠɪᴀ ʜᴀɴᴅʟᴇ, ᴏʀ ʀᴇᴘʟʏ). `ᴍ` = `ᴍɪɴᴜᴛᴇs`, `ʜ` = `ʜᴏᴜʀs`, `ᴅ` = `ᴅᴀʏs`.
  ❍ /unmute <ᴜsᴇʀʜᴀɴᴅʟᴇ>*:* ᴜɴᴍᴜᴛᴇs ᴀ ᴜsᴇʀ. ᴄᴀɴ ᴀʟsᴏ ʙᴇ ᴜsᴇᴅ ᴀs ᴀ ʀᴇᴘʟʏ, ᴍᴜᴛɪɴɢ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴜsᴇʀ.
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
 MUTE_HANDLER = CommandHandler("mute", mute)
@@ -255,5 +257,5 @@ dispatcher.add_handler(MUTE_HANDLER)
 dispatcher.add_handler(UNMUTE_HANDLER)
 dispatcher.add_handler(TEMPMUTE_HANDLER)
 
-__mod_name__ = "✰ᴍᴜᴛᴇ​✰"
+__mod_name__ = "⚡Mᴜᴛᴇ⚡"
 __handlers__ = [MUTE_HANDLER, UNMUTE_HANDLER, TEMPMUTE_HANDLER]

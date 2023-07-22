@@ -8,9 +8,9 @@ from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-import MukeshRobot
-from MukeshRobot import dispatcher
-from MukeshRobot.modules.helper_funcs.chat_status import dev_plus
+import AloneRobot
+from AloneRobot import dispatcher
+from AloneRobot.modules.helper_funcs.chat_status import dev_plus
 
 
 @run_async
@@ -18,12 +18,12 @@ from MukeshRobot.modules.helper_funcs.chat_status import dev_plus
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {MukeshRobot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {AloneRobot.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        MukeshRobot.ALLOW_CHATS = True
+        AloneRobot.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        MukeshRobot.ALLOW_CHATS = False
+        AloneRobot.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
@@ -91,10 +91,12 @@ dispatcher.add_handler(LEAVE_HANDLER)
 dispatcher.add_handler(GITPULL_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
-__mod_name__ = "✰ᴅᴇᴠ✰"
+__mod_name__ = "♨️ᴅᴇᴠ♨️"
 __help__ = """ 
-/lockdown on/off
-/leave ᴛᴏ ʟᴇᴀᴠᴇ ᴄʜᴀᴛ
-/gitpull  ᴛᴏ ᴘᴜʟʟ ɢɪᴛ
-/restart ᴛᴏ ʀᴇsᴛᴀʀᴛ ʙᴏᴛ """
+/ʟᴏᴄᴋᴅᴏᴡɴ ᴏɴ/ᴏғғ
+/ʟᴇᴀᴠᴇ  ᴛᴏ ʟᴇᴀᴠᴇ ᴄʜᴀᴛ
+/ɢɪᴛᴘᴜʟʟ  ᴛᴏ ᴘᴜʟʟ ɢɪᴛ
+/ʀᴇʙᴏᴏᴛ ᴏʀ /ʀᴇsᴛᴀʀᴛ ᴛᴏ ʀᴇsᴛᴀʀᴛ ʙᴏᴛ 
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""
 __handlers__ = [LEAVE_HANDLER, GITPULL_HANDLER, RESTART_HANDLER, ALLOWGROUPS_HANDLER]

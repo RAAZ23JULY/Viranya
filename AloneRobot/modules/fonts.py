@@ -1,8 +1,9 @@
-from pyrogram import  filters
+from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from MukeshRobot.utils.fonts import Fonts
-from MukeshRobot import pbot as Client
+from AloneRobot import pbot as Client
+from AloneRobot.utils.fonts import Fonts
+
 
 @Client.on_message(filters.command(["font", "fonts"]))
 async def style_buttons(c, m, cb=False):
@@ -42,7 +43,7 @@ async def style_buttons(c, m, cb=False):
             InlineKeyboardButton("H̆̈ă̈p̆̈p̆̈y̆̈", callback_data="style+happy"),
             InlineKeyboardButton("S̑̈ȃ̈d̑̈", callback_data="style+sad"),
         ],
-        [InlineKeyboardButton ("ᴄʟᴏsᴇ",callback_data="close_reply"),InlineKeyboardButton ("ɴᴇxᴛ ➻", callback_data="nxt")],
+        [InlineKeyboardButton("ɴᴇxᴛ ➻", callback_data="nxt")],
     ]
     if not cb:
         await m.reply_text(
@@ -95,7 +96,7 @@ async def nxt(c, m):
                 InlineKeyboardButton("S̶t̶r̶i̶k̶e̶", callback_data="style+strike"),
                 InlineKeyboardButton("F༙r༙o༙z༙e༙n༙", callback_data="style+frozen"),
             ],
-            [InlineKeyboardButton ("ᴄʟᴏsᴇ",callback_data="close_reply"),InlineKeyboardButton ("ʙᴀᴄᴋ", callback_data="nxt+0")],
+            [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="nxt+0")],
         ]
         await m.answer()
         await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
@@ -195,7 +196,10 @@ async def style(c, m):
 
 __help__ = """
 
- ❍ /fonts <ALONE> *:* ᴄᴏɴᴠᴇʀᴛs sɪᴍᴩʟᴇ ᴛᴇxᴛ ᴛᴏ ʙᴇᴀᴜᴛɪғᴜʟ ᴛᴇxᴛ ʙʏ ᴄʜᴀɴɢɪɴɢ ɪᴛ's ғᴏɴᴛ.
+ ❍ font <text> *:* ᴄᴏɴᴠᴇʀᴛs sɪᴍᴩʟᴇ ᴛᴇxᴛ ᴛᴏ ʙᴇᴀᴜᴛɪғᴜʟ ᴛᴇxᴛ ʙʏ ᴄʜᴀɴɢɪɴɢ ɪᴛ's ғᴏɴᴛ.
+
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
  """
 
-__mod_name__ = "✰ғᴏɴᴛ✰"
+__mod_name__ = "♨️Fᴏɴᴛ♨️"

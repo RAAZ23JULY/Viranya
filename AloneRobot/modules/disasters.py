@@ -7,7 +7,7 @@ from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from MukeshRobot import (
+from AloneRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -17,15 +17,15 @@ from MukeshRobot import (
     WOLVES,
     dispatcher,
 )
-from MukeshRobot.modules.helper_funcs.chat_status import (
+from AloneRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from MukeshRobot.modules.helper_funcs.extraction import extract_user
-from MukeshRobot.modules.log_channel import gloggable
+from AloneRobot.modules.helper_funcs.extraction import extract_user
+from AloneRobot.modules.log_channel import gloggable
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "MukeshRobot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "AloneRobot/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
@@ -527,7 +527,7 @@ def devlist(update: Update, context: CallbackContext):
     m = update.effective_message.reply_text(
         "<code>ɢᴀᴛʜᴇʀɪɴɢ..</code>", parse_mode=ParseMode.HTML
     )
-    true_dev = list(set(DEV_USERS))
+    true_dev = list(set(DEV_USERS) - {OWNER_ID})
     reply = "✨ <b>ᴅᴇᴠs ᴜsᴇʀ ʟɪsᴛ :</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
@@ -629,6 +629,8 @@ __help__ = f"""
 
 `⚠️ ʀᴇᴀᴅ ғʀᴏᴍ ᴛᴏᴘ`
 ᴠɪsɪᴛ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](f"https://t.me{SUPPORT_CHAT}") ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](f"https://t.me/the_vip_boy")............☆
 """
 
 SUDO_HANDLER = CommandHandler("addsudo", addsudo)
@@ -661,7 +663,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "✰ᴅᴇᴠꜱ✰"
+__mod_name__ = "♨️ᴅᴇᴠꜱ♨️"
 __handlers__ = [
     SUDO_HANDLER,
     SUPPORT_HANDLER,

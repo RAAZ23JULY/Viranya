@@ -14,19 +14,19 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from MukeshRobot import TIGERS, WOLVES, dispatcher
-from MukeshRobot.modules.connection import connected
-from MukeshRobot.modules.helper_funcs.alternate import send_message
-from MukeshRobot.modules.helper_funcs.chat_status import (
+from AloneRobot import TIGERS, WOLVES, dispatcher
+from AloneRobot.modules.connection import connected
+from AloneRobot.modules.helper_funcs.alternate import send_message
+from AloneRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from MukeshRobot.modules.helper_funcs.string_handling import extract_time
-from MukeshRobot.modules.log_channel import loggable
-from MukeshRobot.modules.sql import antiflood_sql as sql
-from MukeshRobot.modules.sql.approve_sql import is_approved
+from AloneRobot.modules.helper_funcs.string_handling import extract_time
+from AloneRobot.modules.log_channel import loggable
+from AloneRobot.modules.sql import antiflood_sql as sql
+from AloneRobot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
@@ -417,9 +417,11 @@ __help__ = """
  `6ʜ` = 6 ʜᴏᴜʀs
  `3ᴅ` = 3 ᴅᴀʏs
  `1ᴡ` = 1 ᴡᴇᴇᴋ
+
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
  """
 
-__mod_name__ = "✰ꜰʟᴏᴏᴅ✰"
+__mod_name__ = "♨️ꜰʟᴏᴏᴅ♨️"
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.group, check_flood

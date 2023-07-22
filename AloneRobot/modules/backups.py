@@ -7,22 +7,22 @@ from telegram import ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-# from MukeshRobot.modules.sql import warns_sql as warnssql
-import MukeshRobot.modules.sql.blacklist_sql as blacklistsql
+# from AloneRobot.modules.sql import warns_sql as warnssql
+import AloneRobot.modules.sql.blacklist_sql as blacklistsql
 
-# from MukeshRobot.modules.sql import cust_filters_sql as filtersql
-# import MukeshRobot.modules.sql.welcome_sql as welcsql
-import MukeshRobot.modules.sql.locks_sql as locksql
-import MukeshRobot.modules.sql.notes_sql as sql
+# from AloneRobot.modules.sql import cust_filters_sql as filtersql
+# import AloneRobot.modules.sql.welcome_sql as welcsql
+import AloneRobot.modules.sql.locks_sql as locksql
+import AloneRobot.modules.sql.notes_sql as sql
 
-# from MukeshRobot.modules.rules import get_rules
-import MukeshRobot.modules.sql.rules_sql as rulessql
-from MukeshRobot import EVENT_LOGS,OWNER_ID, SUPPORT_CHAT, dispatcher
-from MukeshRobot.__main__ import DATA_IMPORT
-from MukeshRobot.modules.connection import connected
-from MukeshRobot.modules.helper_funcs.alternate import typing_action
-from MukeshRobot.modules.helper_funcs.chat_status import user_admin
-from MukeshRobot.modules.sql import disable_sql as disabledsql
+# from AloneRobot.modules.rules import get_rules
+import AloneRobot.modules.sql.rules_sql as rulessql
+from AloneRobot import EVENT_LOGS,OWNER_ID, SUPPORT_CHAT, dispatcher
+from AloneRobot.__main__ import DATA_IMPORT
+from AloneRobot.modules.connection import connected
+from AloneRobot.modules.helper_funcs.alternate import typing_action
+from AloneRobot.modules.helper_funcs.chat_status import user_admin
+from AloneRobot.modules.sql import disable_sql as disabledsql
 
 
 @run_async
@@ -326,7 +326,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    with open("MukeshRobot{}.backup".format(chat_id), "w") as f:
+    with open("AloneRobot{}.backup".format(chat_id), "w") as f:
         f.write(str(baccinfo))
     context.bot.sendChatAction(current_chat_id, "upload_document")
     tgl = time.strftime("%H:%M:%S - %d/%m/%Y", time.localtime(time.time()))
@@ -342,15 +342,15 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("MukeshRobot{}.backup".format(chat_id), "rb"),
-        caption="📤*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `MukeshRobot-Backup` was specially made for notes 📚.".format(
+        document=open("AloneRobot{}.backup".format(chat_id), "rb"),
+        caption="📤*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `AloneRobot-Backup` was specially made for notes 📚.".format(
             chat.title, chat_id, tgl
         ),
         timeout=360,
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("MukeshRobot{}.backup".format(chat_id))  # Cleaning file
+    os.remove("AloneRobot{}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data
@@ -368,16 +368,17 @@ def get_chat(chat_id, chat_data):
         return {"status": False, "value": False}
 
 
-__mod_name__ = "✰ʙᴀᴄᴋᴜᴘ✰"
+__mod_name__ = "♨️Bᴀᴄᴋᴜᴘ♨️"
 
 __help__ = """
 *ᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ:*
 
- ❍ /import : ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ʙᴀᴄᴋᴜᴘ ғɪʟᴇ ғᴏʀ ᴛʜᴇ ʙᴜᴛʟᴇʀ / ᴇᴍɪʟɪᴀ ɢʀᴏᴜᴘ ᴛᴏ ɪᴍᴘᴏʀᴛ ᴀs ᴍᴜᴄʜ ᴀs ᴘᴏssɪʙʟᴇ, ᴍᴀᴋɪɴɢ ᴛʀᴀɴsғᴇʀs ᴠᴇʀʏ ᴇᴀsʏ! \
+ ❍ /ɪᴍᴘᴏʀᴛ: ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ʙᴀᴄᴋᴜᴘ ғɪʟᴇ ғᴏʀ ᴛʜᴇ ʙᴜᴛʟᴇʀ / ᴇᴍɪʟɪᴀ ɢʀᴏᴜᴘ ᴛᴏ ɪᴍᴘᴏʀᴛ ᴀs ᴍᴜᴄʜ ᴀs ᴘᴏssɪʙʟᴇ, ᴍᴀᴋɪɴɢ ᴛʀᴀɴsғᴇʀs ᴠᴇʀʏ ᴇᴀsʏ! \
  ɴᴏᴛᴇ ᴛʜᴀᴛ ғɪʟᴇs / ᴘʜᴏᴛᴏs ᴄᴀɴɴᴏᴛ ʙᴇ ɪᴍᴘᴏʀᴛᴇᴅ ᴅᴜᴇ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ʀᴇsᴛʀɪᴄᴛɪᴏɴs.
 
- ❍ /export : ᴇxᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴅᴀᴛᴀ, ᴡʜɪᴄʜ ᴡɪʟʟ ʙᴇ ᴇxᴘᴏʀᴛᴇᴅ ᴀʀᴇ: ʀᴜʟᴇs, ɴᴏᴛᴇs (ᴅᴏᴄᴜᴍᴇɴᴛs, ɪᴍᴀɢᴇs, ᴍᴜsɪᴄ, ᴠɪᴅᴇᴏ, ᴀᴜᴅɪᴏ, ᴠᴏɪᴄᴇ, ᴛᴇxᴛ, ᴛᴇxᴛ ʙᴜᴛᴛᴏɴs) \
+ ❍ /ᴇxᴘᴏʀᴛ: ᴇxᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴅᴀᴛᴀ, ᴡʜɪᴄʜ ᴡɪʟʟ ʙᴇ ᴇxᴘᴏʀᴛᴇᴅ ᴀʀᴇ: ʀᴜʟᴇs, ɴᴏᴛᴇs (ᴅᴏᴄᴜᴍᴇɴᴛs, ɪᴍᴀɢᴇs, ᴍᴜsɪᴄ, ᴠɪᴅᴇᴏ, ᴀᴜᴅɪᴏ, ᴠᴏɪᴄᴇ, ᴛᴇxᴛ, ᴛᴇxᴛ ʙᴜᴛᴛᴏɴs) \
 
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆
 """
 
 IMPORT_HANDLER = CommandHandler("import", import_data)
