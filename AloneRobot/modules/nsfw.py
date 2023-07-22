@@ -9,11 +9,11 @@ from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import AloneRobot.modules.sql.nsfw_sql as sql
-from AloneRobot import dispatcher
-from AloneRobot.modules.helper_funcs.chat_status import user_admin
-from AloneRobot.modules.helper_funcs.filters import CustomFilters
-from AloneRobot.modules.log_channel import gloggable
+import MukeshRobot.modules.sql.nsfw_sql as sql
+from MukeshRobot import dispatcher
+from MukeshRobot.modules.helper_funcs.chat_status import user_admin
+from MukeshRobot.modules.helper_funcs.filters import CustomFilters
+from MukeshRobot.modules.log_channel import gloggable
 
 
 @run_async
@@ -798,7 +798,7 @@ __handlers__ = [
     BAKA_HANDLER,
     DVA_HANDLER,
 ]
-__mod_name__ = "⚡ɴsғᴡ⚡"
+__mod_name__ = "✰ɴsғᴡ✰"
 
 __help__ = """
 *ɴsғᴡ:*
@@ -856,6 +856,4 @@ __help__ = """
 ❂ /smug : sᴇɴᴅs ʀᴀɴᴅᴏᴍ sᴍᴜɢ ɢɪғs.
 ❂ /baka : sᴇɴᴅs ʀᴀɴᴅᴏᴍ ʙᴀᴋᴀ sʜᴏᴜᴛ ɢɪғs.
 ❂ /dva : sᴇɴᴅs ʀᴀɴᴅᴏᴍ ᴅ.ᴠᴀ sᴏᴜʀᴄᴇ ɪᴍᴀɢᴇs.
-
-
-☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆"""
+"""

@@ -5,12 +5,12 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import AloneRobot.modules.sql.approve_sql as sql
-from AloneRobot import DRAGONS, dispatcher
-from AloneRobot.modules.disable import DisableAbleCommandHandler
-from AloneRobot.modules.helper_funcs.chat_status import user_admin
-from AloneRobot.modules.helper_funcs.extraction import extract_user
-from AloneRobot.modules.log_channel import loggable
+import MukeshRobot.modules.sql.approve_sql as sql
+from MukeshRobot import DRAGONS, dispatcher
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot.modules.helper_funcs.chat_status import user_admin
+from MukeshRobot.modules.helper_funcs.extraction import extract_user
+from MukeshRobot.modules.log_channel import loggable
 
 
 @loggable
@@ -152,12 +152,12 @@ def unapproveall(update: Update, context: CallbackContext):
             [
                 [
                     InlineKeyboardButton(
-                        text="📍Unapprove all users📍", callback_data="unapproveall_user"
+                        text="Unapprove all users", callback_data="unapproveall_user"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="📍Cancel📍", callback_data="unapproveall_cancel"
+                        text="Cancel", callback_data="unapproveall_cancel"
                     )
                 ],
             ]
@@ -183,18 +183,18 @@ def unapproveall_btn(update: Update, context: CallbackContext):
                 sql.disapprove(chat.id, user_id)
 
         if member.status == "administrator":
-            query.answer("Only owner of the chat can do this.📍")
+            query.answer("Only owner of the chat can do this.")
 
         if member.status == "member":
-            query.answer("You need to be admin to do this.📍")
+            query.answer("You need to be admin to do this.")
     elif query.data == "unapproveall_cancel":
         if member.status == "creator" or query.from_user.id in DRAGONS:
-            message.edit_text("Removing of all approved users has been cancelled.📍")
+            message.edit_text("Removing of all approved users has been cancelled.")
             return ""
         if member.status == "administrator":
-            query.answer("Only owner of the chat can do this.📍")
+            query.answer("Only owner of the chat can do this.")
         if member.status == "member":
-            query.answer("You need to be admin to do this.📍")
+            query.answer("You need to be admin to do this.")
 
 
 __help__ = """
@@ -209,8 +209,6 @@ sᴏᴍᴇᴛɪᴍᴇs, ʏᴏᴜ ᴍɪɢʜᴛ ᴛʀᴜsᴛ ᴀ ᴜsᴇʀ ɴᴏ�
 ❍ /unapprove *:* ᴜɴᴀᴘᴘʀᴏᴠᴇ ᴏғ ᴀ ᴜsᴇʀ. ᴛʜᴇʏ ᴡɪʟʟ ɴᴏᴡ ʙᴇ sᴜʙᴊᴇᴄᴛ ᴛᴏ ʟᴏᴄᴋs, ʙʟᴀᴄᴋʟɪsᴛs, ᴀɴᴅ ᴀɴᴛɪғʟᴏᴏᴅ ᴀɢᴀɪɴ.
 ❍ /approved *:* ʟɪsᴛ ᴀʟʟ ᴀᴘᴘʀᴏᴠᴇᴅ ᴜsᴇʀs.
 ❍ /unapproveall *:* ᴜɴᴀᴘᴘʀᴏᴠᴇ *ᴀʟʟ* ᴜsᴇʀs ɪɴ ᴀ ᴄʜᴀᴛ. ᴛʜɪs ᴄᴀɴɴᴏᴛ ʙᴇ ᴜɴᴅᴏɴᴇ.
-
-☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆
 """
 
 APPROVE = DisableAbleCommandHandler("approve", approve)
@@ -227,6 +225,6 @@ dispatcher.add_handler(APPROVAL)
 dispatcher.add_handler(UNAPPROVEALL)
 dispatcher.add_handler(UNAPPROVEALL_BTN)
 
-__mod_name__ = "♨️Aᴘᴘʀᴏᴠᴇ♨️"
+__mod_name__ = "✰ᴀᴘᴘʀᴏᴠᴇ✰"
 __command_list__ = ["approve", "unapprove", "approved", "approval"]
 __handlers__ = [APPROVE, DISAPPROVE, APPROVED, APPROVAL]

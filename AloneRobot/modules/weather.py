@@ -3,8 +3,8 @@ import io
 import aiohttp
 from telethon.tl import functions, types
 
-from AloneRobot import telethn as tbot
-from AloneRobot.events import register
+from MukeshRobot import telethn as tbot
+from MukeshRobot.events import register
 
 
 async def is_register_admin(chat, user):
@@ -40,8 +40,6 @@ __help__ = """
 
  ❍ /weather <ᴄɪᴛʏ>*:* ᴀᴅᴠᴀɴᴄᴇᴅ ᴡᴇᴀᴛʜᴇʀ ᴍᴏᴅᴜʟᴇ, ᴜsᴀɢᴇ sᴀᴍᴇ ᴀs /ᴡᴇᴀᴛʜᴇʀ
  ❍ /weather  ᴍᴏᴏɴ*:* ɢᴇᴛ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛᴜs ᴏғ ᴍᴏᴏɴ
-
-☆............𝙱𝚈 » [VILLAIN](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "⚡Wᴇᴀᴛʜᴇʀ⚡"
+__mod_name__ = "✰ᴡᴇᴀᴛʜᴇʀ✰"

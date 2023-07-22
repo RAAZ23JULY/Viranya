@@ -3,16 +3,14 @@ import json
 import requests
 from telegram.ext import CommandHandler, run_async
 
-from AloneRobot import dispatcher
-from AloneRobot.modules.helper_funcs.alternate import send_message
-from AloneRobot.modules.helper_funcs.chat_status import user_admin
+from MukeshRobot import dispatcher
+from MukeshRobot.modules.helper_funcs.alternate import send_message
+from MukeshRobot.modules.helper_funcs.chat_status import user_admin
 
-__mod_name__ = "📍𝙿ʜᴏɴᴇ📍"
+__mod_name__ = "✰ᴘʜᴏɴᴇ✰"
 __help__ = """
 » /phone ꜰɪʟʟ ᴀɴʏ ᴍᴏʙɪʟᴇ ɴᴜᴍʙᴇʀ ᴛᴏ ᴄʜᴇᴄᴋ ɪɴꜰᴏ.
-
-
-☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆"""
+"""
 
 
 @run_async
@@ -22,7 +20,7 @@ def phone(update, context):
     args = update.effective_message.text.split(None, 1)
     information = args[1]
     number = information
-    key = "f200d025-0f94-42a0-8454-f3ebbfc76bd1"
+    key = "f66950368a61ebad3cba9b5924b4532d"
     api = (
         "http://apilayer.net/api/validate?access_key="
         + key

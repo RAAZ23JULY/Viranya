@@ -2,8 +2,8 @@ from telegram import TelegramError, Update
 from telegram.ext import CommandHandler
 from telegram.ext.dispatcher import CallbackContext, run_async
 
-from AloneRobot import LOGGER, dispatcher
-from AloneRobot.modules.helper_funcs.filters import CustomFilters
+from MukeshRobot import LOGGER, dispatcher
+from MukeshRobot.modules.helper_funcs.filters import CustomFilters
 
 
 @run_async
@@ -30,11 +30,9 @@ __help__ = """
 *ᴅᴇᴠ  ᴏɴʟʏ:* 
 • /snipe <ᴄʜᴀᴛɪᴅ> <sᴛʀɪɴɢ>
 ᴍᴀᴋᴇ ᴍᴇ sᴇɴᴅ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀ sᴘᴇᴄɪғɪᴄ ᴄʜᴀᴛ.
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "⚡sɴɪᴘᴇ⚡"
+__mod_name__ = "✰sɴɪᴘᴇ✰"
 
 SNIPE_HANDLER = CommandHandler(
     "snipe", snipe, pass_args=True, filters=CustomFilters.dev_filter

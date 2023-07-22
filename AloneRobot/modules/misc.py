@@ -2,9 +2,9 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 from telegram.ext import CallbackContext, CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 
-from AloneRobot import dispatcher
-from AloneRobot.modules.disable import DisableAbleCommandHandler
-from AloneRobot.modules.helper_funcs.chat_status import user_admin
+from MukeshRobot import dispatcher
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot.modules.helper_funcs.chat_status import user_admin
 
 MARKDOWN_HELP = f"""
 ᴍᴀʀᴋᴅᴏᴡɴ ɪs ᴀ ᴠᴇʀʏ ᴘᴏᴡᴇʀғᴜʟ ғᴏʀᴍᴀᴛᴛɪɴɢ ᴛᴏᴏʟ sᴜᴘᴘᴏʀᴛᴇᴅ ʙʏ ᴛᴇʟᴇɢʀᴀᴍ. {dispatcher.bot.first_name} ʜᴀs sᴏᴍᴇ ᴇɴʜᴀɴᴄᴇᴍᴇɴᴛs, ᴛᴏ ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ \
@@ -100,7 +100,6 @@ __help__ = """
  `/ᴄᴀsʜ 1 ᴜsᴅ ɪɴʀ`
 ᴏᴜᴛᴘᴜᴛ: `1.0 ᴜsᴅ = 75.505 ɪɴʀ`
 
-☆............𝙱𝚈 » [Viranya](https://t.me/@Epicstarr)............☆
 """
 
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)
@@ -109,7 +108,7 @@ MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
 
-__mod_name__ = "📍Exᴛʀᴀs📍"
+__mod_name__ = "✰ᴇxᴛʀᴀs✰"
 __command_list__ = ["id", "echo"]
 __handlers__ = [
     ECHO_HANDLER,

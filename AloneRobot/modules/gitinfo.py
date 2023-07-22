@@ -1,8 +1,8 @@
 from aiohttp import ClientSession
 from pyrogram import filters
 
-from AloneRobot import pbot
-from AloneRobot.utils.errors import capture_err
+from MukeshRobot import pbot
+from MukeshRobot.utils.errors import capture_err
 
 
 @pbot.on_message(filters.command("github"))
@@ -45,12 +45,10 @@ async def github(_, message):
     await message.reply_photo(photo=avatar_url, caption=caption)
 
 
-__mod_name__ = "📍Gɪᴛʜᴜʙ📍"
+__mod_name__ = "✰ɢɪᴛʜᴜʙ✰"
 
 __help__ = """
 ɪ ᴡɪʟʟ ɢɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ɢɪᴛʜᴜʙ ᴘʀᴏғɪʟᴇ 
 
  ❍ /github <ᴜsᴇʀɴᴀᴍᴇ>*:* ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ɢɪᴛʜᴜʙ ᴜsᴇʀ.
-
-☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆
 """

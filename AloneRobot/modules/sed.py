@@ -5,9 +5,9 @@ import telegram
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
-from AloneRobot import LOGGER, dispatcher
-from AloneRobot.modules.disable import DisableAbleMessageHandler
-from AloneRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from MukeshRobot import LOGGER, dispatcher
+from MukeshRobot.modules.disable import DisableAbleMessageHandler
+from MukeshRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 
 DELIMITERS = ("/", ":", "|", "_")
 
@@ -124,7 +124,7 @@ def sed(update: Update, context: CallbackContext):
             update.effective_message.reply_to_message.reply_text(text)
 
 
-__mod_name__ = "⚡sᴇᴅ⚡"
+__mod_name__ = "✰sᴇᴅ✰"
 
 SED_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"s([{}]).*?\1.*".format("".join(DELIMITERS))), sed, friendly="sed"

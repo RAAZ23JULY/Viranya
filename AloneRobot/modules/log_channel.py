@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from AloneRobot.modules.helper_funcs.misc import is_module_loaded
+from MukeshRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from AloneRobot import EVENT_LOGS, LOGGER, dispatcher
-    from AloneRobot.modules.helper_funcs.chat_status import user_admin
-    from AloneRobot.modules.sql import log_channel_sql as sql
+    from MukeshRobot import EVENT_LOGS, LOGGER, dispatcher
+    from MukeshRobot.modules.helper_funcs.chat_status import user_admin
+    from MukeshRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
@@ -202,11 +202,9 @@ sᴇᴛᴛɪɴɢ ᴛʜᴇ ʟᴏɢ ᴄʜᴀɴɴᴇʟ ɪs ᴅᴏɴᴇ ʙʏ:
 ❍ ᴀᴅᴅɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴛʜᴇ ᴅᴇsɪʀᴇᴅ ᴄʜᴀɴɴᴇʟ (ᴀs ᴀɴ ᴀᴅᴍɪɴ!)
 ❍ sᴇɴᴅɪɴɢ /setlog ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ
 ❍ ғᴏʀᴡᴀʀᴅɪɴɢ ᴛʜᴇ /setlog ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ
-
-☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆
 """
 
-    __mod_name__ = "📍LLᴏɢs📍"
+    __mod_name__ = "✰ʟᴏɢs​✰"
 
     LOG_HANDLER = CommandHandler("logchannel", logging)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog)

@@ -4,13 +4,13 @@ from datetime import datetime
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 
-from AloneRobot import telethn as tbot
-from AloneRobot.events import register
+from MukeshRobot import telethn as tbot
+from MukeshRobot.events import register
 
-Alone = "Controller"
+Mukesh = "Controller"
 TMP_DOWNLOAD_DIRECTORY = "./"
 telegraph = Telegraph()
-r = telegraph.create_account(short_name=Alone)
+r = telegraph.create_account(short_name=Mukesh)
 auth_url = r["auth_url"]
 
 
@@ -91,8 +91,6 @@ __help__ = """
  ❍ /tgm :ɢᴇᴛ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴏғ ʀᴇᴘʟɪᴇᴅ ᴍᴇᴅɪᴀ
  ❍ /tgt :ɢᴇᴛ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴏғ ʀᴇᴘʟɪᴇᴅ ᴛᴇxᴛ
  ❍ /tgt [ᴄᴜsᴛᴏᴍ ɴᴀᴍᴇ]: ɢᴇᴛ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴏғ ʀᴇᴘʟɪᴇᴅ ᴛᴇxᴛ ᴡɪᴛʜ ᴄᴜsᴛᴏᴍ ɴᴀᴍᴇ.
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "⚡T-Gʀᴀᴘʜ⚡"
+__mod_name__ = "✰ᴛ-ɢʀᴀᴘʜ✰"

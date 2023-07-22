@@ -7,16 +7,16 @@ from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandle
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import AloneRobot.modules.sql.blsticker_sql as sql
-from AloneRobot import LOGGER, dispatcher
-from AloneRobot.modules.connection import connected
-from AloneRobot.modules.disable import DisableAbleCommandHandler
-from AloneRobot.modules.helper_funcs.alternate import send_message
-from AloneRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AloneRobot.modules.helper_funcs.misc import split_message
-from AloneRobot.modules.helper_funcs.string_handling import extract_time
-from AloneRobot.modules.log_channel import loggable
-from AloneRobot.modules.warns import warn
+import MukeshRobot.modules.sql.blsticker_sql as sql
+from MukeshRobot import LOGGER, dispatcher
+from MukeshRobot.modules.connection import connected
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot.modules.helper_funcs.alternate import send_message
+from MukeshRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from MukeshRobot.modules.helper_funcs.misc import split_message
+from MukeshRobot.modules.helper_funcs.string_handling import extract_time
+from MukeshRobot.modules.log_channel import loggable
+from MukeshRobot.modules.warns import warn
 
 
 @run_async
@@ -505,11 +505,9 @@ __help__ = """
  ❍ /ʙʟsᴛɪᴄᴋᴇʀᴍᴏᴅᴇ <ʙᴀɴ/ᴛʙᴀɴ/ᴍᴜᴛᴇ/ᴛᴍᴜᴛᴇ>*:* sᴇᴛs ᴜᴘ ᴀ ᴅᴇғᴀᴜʟᴛ ᴀᴄᴛɪᴏɴ ᴏɴ ᴡʜᴀᴛ ᴛᴏ ᴅᴏ ɪғ ᴜsᴇʀs ᴜsᴇ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ sᴛɪᴄᴋᴇʀs
 ɴᴏᴛᴇ:
  ❍ <sᴛɪᴄᴋᴇʀ ʟɪɴᴋ> ᴄᴀɴ ʙᴇ `ʜᴛᴛᴘs://ᴛ.ᴍᴇ/ᴀᴅᴅsᴛɪᴄᴋᴇʀs/<sᴛɪᴄᴋᴇʀ>` ᴏʀ ᴊᴜsᴛ `<sᴛɪᴄᴋᴇʀ>` ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ sᴛɪᴄᴋᴇʀ ᴍᴇssᴀɢᴇ
-
-☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "♨️sᴛɪᴄᴋᴇʀ♨️"
+__mod_name__ = "✰sᴛɪᴄᴋᴇʀ✰"
 
 BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
     "blsticker", blackliststicker, admin_ok=True

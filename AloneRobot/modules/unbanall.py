@@ -14,12 +14,12 @@ from telethon.tl.types import (
     ChatBannedRights,
 )
 
-from AloneRobot import *
-from AloneRobot import LOGGER
-from AloneRobot.events import register
+from MukeshRobot import *
+from MukeshRobot import LOGGER
+from MukeshRobot.events import register
 
 sudo = 6079943111
-BOT_ID = 5963562690
+BOT_ID = 6103668325
 CMD_HELP = "/ !"
 
 
@@ -182,8 +182,9 @@ async def get_users(show):
     os.remove("userslist.txt")
 
 
-__mod_name__ = "⚡ᴀᴅᴠᴀɴᴄᴇ⚡"
+__mod_name__ = "✰ᴀᴅᴠᴀɴᴄᴇ✰"
 __help__ = """ 
+ ©️ ʙʏ ᯾ [ᴀʟᴏɴᴇ] (t.me/ALONE_WAS_BOT)
 
 ➥ /unbanall : ᴜɴʙᴀɴ ᴀʟʟ ᴍᴀᴍʙᴇʀ 
 
@@ -191,5 +192,4 @@ __help__ = """
 
 ➥ /users : ɢᴇᴛ ɢʀᴏᴜᴘ ᴜsᴇʀs ʟɪsᴛ
 
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """

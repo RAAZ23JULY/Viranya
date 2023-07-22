@@ -5,13 +5,13 @@ from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
 
-from AloneRobot import dispatcher,OWNER_ID
-from AloneRobot.modules.disable import (
+from MukeshRobot import dispatcher,OWNER_ID
+from MukeshRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from AloneRobot.modules.sql import afk_sql as sql
-from AloneRobot.modules.users import get_user_id
+from MukeshRobot.modules.sql import afk_sql as sql
+from MukeshRobot.modules.users import get_user_id
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
@@ -41,7 +41,7 @@ def afk(update: Update, context: CallbackContext):
     fname = update.effective_user.first_name
     try:
         update.effective_message.reply_text(
-            "{} ɪs ɴᴏᴡ ᴀᴡᴀʏ ғʀᴏᴍ ᴛɢ» {}".format(fname, notice)
+            "{} ɪs ɴᴏᴡ ᴀᴡᴀʏ » {}".format(fname, notice)
         )
     except BadRequest:
         pass
@@ -136,7 +136,7 @@ def check_afk(update, context, user_id, fst_name, userc_id):
             res = "{} is afk".format(fst_name)
             update.effective_message.reply_text(res)
         else:
-            res = "{} ɪs ᴀғᴋ ʙᴀʙʏ.\nʀᴇᴀsᴏɴ➪ <code>{}</code>".format(
+            res = "{} ɪs ᴀғᴋ .\nʀᴇᴀsᴏɴ➪ <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
             update.effective_message.reply_text(res, parse_mode="html")
@@ -149,7 +149,6 @@ __help__ = """
  ❍ ʙʏᴇ <ʀᴇᴀsᴏɴ>*:* sᴀᴍᴇ ᴀs ᴛʜᴇ ᴀғᴋ ᴄᴏᴍᴍᴀɴᴅ - ʙᴜᴛ ɴᴏᴛ ᴀ ᴄᴏᴍᴍᴀɴᴅ.
 ᴡʜᴇɴ ᴍᴀʀᴋᴇᴅ ᴀs ᴀғᴋ, ᴀɴʏ ᴍᴇɴᴛɪᴏɴs ᴡɪʟʟ ʙᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴡɪᴛʜ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴀʏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ!
  
-☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆
 """
 
 AFK_HANDLER = DisableAbleCommandHandler("afk", afk)
@@ -164,7 +163,7 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "♨️Aꜰᴋ♨️"
+__mod_name__ = "✰ᴀꜰᴋ✰"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),

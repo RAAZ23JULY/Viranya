@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telegram import __version__ as lver
 from telethon import __version__ as tver
 
-from AloneRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID
+from MukeshRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID,BOT_NAME
 
 PHOTO = [
     "https://telegra.ph/file/d2a23fbe48129a7957887.jpg",
@@ -17,14 +17,14 @@ PHOTO = [
     "https://telegra.ph/file/bdfd86195221e979e6b20.jpg",
 ]
 
-Alone = [
+Mukesh = [
     [
-        InlineKeyboardButton(text="📍𝐎ωиєя📍", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🍒𝐆яσυρ🍒", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="ɴᴏᴏʙ", user_id=OWNER_ID),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="☆ 𝐀∂∂ 𝐌є 𝐌σι 𝐋υν ☆",
+            text="➕ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -37,36 +37,33 @@ lol = "https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg"
 async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
-    await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
-    await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
-    await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
-    await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
+    await asyncio.sleep(0.2)
+    await accha.edit("🦋")
+    await asyncio.sleep(0.1)
+    await accha.edit("💥")
+    await asyncio.sleep(0.1)
+    await accha.edit("ᴀʟᴏɴᴇ ɪs︎ ᴀʟɪᴠɪɴɢ..")
+
     await accha.delete()
-    await asyncio.sleep(0.5)
+    await asyncio.sleep(0.3)
     umm = await m.reply_sticker(
-        "CAACAgUAAxkDAAJHbmLuy2NEfrfh6lZSohacEGrVjd5wAAIOBAACl42QVKnra4sdzC_uKQQ"
+        "CAACAgUAAxkBAAEIwtVkS6rId0bC2N_2eRg_aUKQBtffkwACHgsAAssBWVbD-ZrqLdOvcS8E"
     )
     await umm.delete()
-    await asyncio.sleep(0.8)
+    await asyncio.sleep(0.2)
     await m.reply_photo(
         lol,
-        caption=f"""**🌷ʜᴇʏ, ɪ ᴀᴍ 『[viranya  𝗥𝗢𝗕𝗢𝗧](f"t.me/{BOT_USERNAME}")』🎄**
-   ╔═════ஜ۩۞۩ஜ════╗
-
-   ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [villain](https://t.me@Epicstarr)♨️
-
-   ╚═════ஜ۩۞۩ஜ════╝""",
-        reply_markup=InlineKeyboardMarkup(Alone),
+        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
+   ━━━━━━━━━━━━━━━━━━━
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴀʟᴏɴᴇ](tg://user?id={OWNER_ID}))
+  
+  » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
+  
+  » **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
+  
+  » **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
+  
+  » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
+   ━━━━━━━━━━━━━━━━━━━""",
+        reply_markup=InlineKeyboardMarkup(Mukesh),
     )
-__mod_name__ = "♨️ᴀʟɪᴠᴇ♨️"
-__help__ = """
-
-*ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
-» /alive*:* ᴛᴏ ᴄʜᴇᴀᴋ ❓  ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ?
-
-☆............𝙱𝚈 » [villain](https://t.me/
- @Epicstarr)...........☆"""

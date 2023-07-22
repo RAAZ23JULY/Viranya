@@ -22,13 +22,13 @@ from telegram.ext import (
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown, mention_markdown
 
-import AloneRobot.modules.sql.notes_sql as sql
-from AloneRobot import DRAGONS, EVENT_LOGS, EVENT_LOGS, SUPPORT_CHAT, dispatcher
-from AloneRobot.modules.disable import DisableAbleCommandHandler
-from AloneRobot.modules.helper_funcs.chat_status import connection_status, user_admin
-from AloneRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from AloneRobot.modules.helper_funcs.msg_types import get_note_type
-from AloneRobot.modules.helper_funcs.string_handling import (
+import MukeshRobot.modules.sql.notes_sql as sql
+from MukeshRobot import DRAGONS, EVENT_LOGS, EVENT_LOGS, SUPPORT_CHAT, dispatcher
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot.modules.helper_funcs.chat_status import connection_status, user_admin
+from MukeshRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from MukeshRobot.modules.helper_funcs.msg_types import get_note_type
+from MukeshRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 
@@ -309,10 +309,10 @@ def clearall(update: Update, context: CallbackContext):
             [
                 [
                     InlineKeyboardButton(
-                        text="📍Delete all notes📍", callback_data="notes_rmall"
+                        text="Delete all notes", callback_data="notes_rmall"
                     )
                 ],
-                [InlineKeyboardButton(text="📍Cancel📍", callback_data="notes_cancel")],
+                [InlineKeyboardButton(text="Cancel", callback_data="notes_cancel")],
             ]
         )
         update.effective_message.reply_text(
@@ -515,11 +515,9 @@ A button can be added to a note by using standard markdown link syntax - the lin
  ❍ `/clear <notename>`*:* clear note with this name
  ❍ `/removeallnotes`*:* removes all notes from the group
  *Note:* Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.
-
-☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "⚡Nᴏᴛᴇs⚡"
+__mod_name__ = "✰ɴᴏᴛᴇs✰"
 
 GET_HANDLER = CommandHandler("get", cmd_get)
 HASH_GET_HANDLER = MessageHandler(Filters.regex(r"^#[^\s]+"), hash_get)

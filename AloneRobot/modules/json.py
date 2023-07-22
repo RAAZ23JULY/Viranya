@@ -3,8 +3,8 @@ import io
 from telethon import types
 from telethon.tl import functions
 
-from AloneRobot import telethn as tbot
-from AloneRobot.events import register
+from MukeshRobot import telethn as tbot
+from MukeshRobot.events import register
 
 
 async def is_register_admin(chat, user):

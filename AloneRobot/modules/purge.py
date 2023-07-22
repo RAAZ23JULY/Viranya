@@ -2,8 +2,8 @@ import time
 
 from telethon import events
 
-from AloneRobot import telethn
-from AloneRobot.modules.helper_funcs.telethn.chatstatus import (
+from MukeshRobot import telethn
+from MukeshRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
@@ -16,7 +16,7 @@ async def purge_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [6081787128]:
+    ) and event.from_id not in [1087968824]:
         await event.reply("Only Admins are allowed to use this command")
         return
 
@@ -54,7 +54,7 @@ async def delete_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [6081787128]:
+    ) and event.from_id not in [6079943111]:
         await event.reply("Only Admins are allowed to use this command")
         return
 
@@ -75,9 +75,7 @@ __help__ = """
  ❍ /del *:* ᴅᴇʟᴇᴛᴇs ᴛʜᴇ ᴍᴇssᴀɢᴇ ʏᴏᴜ ʀᴇᴘʟɪᴇᴅ ᴛᴏ
  ❍ /purge *:* ᴅᴇʟᴇᴛᴇs ᴀʟʟ ᴍᴇssᴀɢᴇs ʙᴇᴛᴡᴇᴇɴ ᴛʜɪs ᴀɴᴅ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴍᴇssᴀɢᴇ.
  ❍ /purge  <ɪɴᴛᴇɢᴇʀ x>*:* ᴅᴇʟᴇᴛᴇs ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ, ᴀɴᴅ x ᴍᴇssᴀɢᴇs ғᴏʟʟᴏᴡɪɴɢ ɪᴛ ɪғ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ.
-
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆"""
+"""
 
 PURGE_HANDLER = purge_messages, events.NewMessage(pattern="^[!/]purge$")
 DEL_HANDLER = delete_messages, events.NewMessage(pattern="^[!/]del$")
@@ -85,6 +83,6 @@ DEL_HANDLER = delete_messages, events.NewMessage(pattern="^[!/]del$")
 telethn.add_event_handler(*PURGE_HANDLER)
 telethn.add_event_handler(*DEL_HANDLER)
 
-__mod_name__ = "⚡Pᴜʀɢᴇ⚡"
+__mod_name__ = "✰ᴘᴜʀɢᴇ✰"
 __command_list__ = ["del", "purge"]
 __handlers__ = [PURGE_HANDLER, DEL_HANDLER]

@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from AloneRobot import (
+from MukeshRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -15,8 +15,8 @@ from AloneRobot import (
     WOLVES,
     dispatcher,
 )
-from AloneRobot.modules.disable import DisableAbleCommandHandler
-from AloneRobot.modules.helper_funcs.chat_status import (
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_delete,
     can_restrict,
@@ -27,9 +27,9 @@ from AloneRobot.modules.helper_funcs.chat_status import (
     user_admin,
     user_can_ban,
 )
-from AloneRobot.modules.helper_funcs.extraction import extract_user_and_text
-from AloneRobot.modules.helper_funcs.string_handling import extract_time
-from AloneRobot.modules.log_channel import gloggable, loggable
+from MukeshRobot.modules.helper_funcs.extraction import extract_user_and_text
+from MukeshRobot.modules.helper_funcs.string_handling import extract_time
+from MukeshRobot.modules.log_channel import gloggable, loggable
 
 
 @run_async
@@ -409,8 +409,6 @@ __help__ = """
  ❍ /tban  <ᴜsᴇʀʜᴀɴᴅʟᴇ> x(ᴍ/ʜ/ᴅ)*:* ʙᴀɴs ᴀ ᴜsᴇʀ ғᴏʀ `x` ᴛɪᴍᴇ. (ᴠɪᴀ ʜᴀɴᴅʟᴇ, ᴏʀ ʀᴇᴘʟʏ). `ᴍ` = `ᴍɪɴᴜᴛᴇs`, `ʜ` = `ʜᴏᴜʀs`, `ᴅ` = `ᴅᴀʏs`.
  ❍ /unban  <ᴜsᴇʀʜᴀɴᴅʟᴇ>*:* ᴜɴʙᴀɴs ᴀ ᴜsᴇʀ. (ᴠɪᴀ ʜᴀɴᴅʟᴇ, ᴏʀ ʀᴇᴘʟʏ)
  ❍ /kick <ᴜsᴇʀʜᴀɴᴅʟᴇ>*:* ᴋɪᴄᴋs ᴀ ᴜsᴇʀ ᴏᴜᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ, (ᴠɪᴀ ʜᴀɴᴅʟᴇ, ᴏʀ ʀᴇᴘʟʏ)
-
-☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆
 """
 
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban)
@@ -427,7 +425,7 @@ dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(KICKME_HANDLER)
 
-__mod_name__ = "♨️ʙᴀɴ♨️"
+__mod_name__ = "✰ʙᴀɴ✰"
 __handlers__ = [
     BAN_HANDLER,
     TEMPBAN_HANDLER,

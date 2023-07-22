@@ -3,10 +3,10 @@ import textwrap
 
 from PIL import Image, ImageDraw, ImageFont
 
-from AloneRobot import telethn as bot
-from AloneRobot.events import register
+from MukeshRobot import telethn as bot
+from MukeshRobot.events import register
 
-Credit ="Villain"
+Credit = "Alone"
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -34,7 +34,7 @@ async def handler(event):
 
     msg = await event.reply("```Memifying this image! ✊🏻 ```")
 
-    if "Alone" in Credit:
+    if "Mukesh" in Credit:
         pass
 
     else:
@@ -69,7 +69,7 @@ async def drawText(image_path, text):
 
     else:
 
-        fnt = "./ViranyaRobot/resources/default.ttf"
+        fnt = "./MukeshRobot/resources/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 
@@ -197,8 +197,6 @@ async def drawText(image_path, text):
     return webp_file
 
 
-__mod_name__ = "📍ᴍᴍғ📍"
+__mod_name__ = "✰ᴍᴍғ✰"
 __help__ = """ 
-⫸ /mmf <ᴛᴇxᴛ> ◉ ᴛᴏ ᴍᴇᴍɪғʏ
-
-☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆ """
+⫸ /mmf <ALONE> ◉ ᴛᴏ ᴍᴇᴍɪғʏ """

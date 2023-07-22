@@ -5,7 +5,7 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
 
-from AloneRobot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
+from MukeshRobot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
 
 # =================== CONSTANT ===================
 
@@ -102,9 +102,7 @@ __help__ = """
 *ʀᴇᴍᴏᴠᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs*
  ❍ /zombies *:* sᴛᴀʀᴛs sᴇᴀʀᴄʜɪɴɢ ғᴏʀ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ.
  ❍ /zombies ᴄʟᴇᴀɴ  *:* ʀᴇᴍᴏᴠᴇs ᴛʜᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
 
-__mod_name__ = "⚡Zᴏᴍʙɪᴇ⚡"
+__mod_name__ = "✰ᴢᴏᴍʙɪᴇ✰"

@@ -2,8 +2,8 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from AloneRobot import dispatcher
-from AloneRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot import dispatcher
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -26,9 +26,7 @@ dispatcher.add_handler(UD_HANDLER)
 
 __help__ = """
 » /ud (text) *:* sᴇᴀʀᴄʜs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴏɴ ᴜʀʙᴀɴ ᴅɪᴄᴛɪᴏɴᴀʀʏ ᴀɴᴅ sᴇɴᴅs ʏᴏᴜ ᴛʜᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
-__mod_name__ = "⚡Uʀʙᴀɴ⚡"
+__mod_name__ = "✰ᴜʀʙᴀɴ✰"
 __command_list__ = ["ud"]
 __handlers__ = [UD_HANDLER]

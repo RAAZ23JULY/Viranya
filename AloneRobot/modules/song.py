@@ -5,7 +5,7 @@ import yt_dlp
 from pyrogram import filters
 from youtube_search import YoutubeSearch
 
-from AloneRobot import SUPPORT_CHAT, pbot
+from MukeshRobot import SUPPORT_CHAT, pbot
 
 
 def time_to_seconds(time):
@@ -68,7 +68,7 @@ def song(client, message):
         m.delete()
     except Exception as e:
         m.edit(
-            f"**» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ​ » [sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ](t.me/{SUPPORT_CHAT}) 💕**\n\**ᴇʀʀᴏʀ :** {e}"
+            f"**» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ​ » [sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ](t.me/AlonesHeaven) 💕**\n\**ᴇʀʀᴏʀ :** {e}"
         )
         print(e)
 
@@ -79,9 +79,7 @@ def song(client, message):
         print(e)
 
 
-__mod_name__ = "⚡Sᴏɴɢ⚡"
+__mod_name__ = "✰sᴏɴɢ✰"
 __help__ = """
 /song ᴛᴏ  ᴅᴏᴡɴʟᴏᴀᴅ   ᴀɴʏ  sᴏɴɢ 
-/music ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ  sᴏɴɢ
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆"""
+/music ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ  sᴏɴɢ"""

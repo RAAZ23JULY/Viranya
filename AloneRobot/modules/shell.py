@@ -4,8 +4,8 @@ from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
 
-from AloneRobot import LOGGER, dispatcher
-from AloneRobot.modules.helper_funcs.chat_status import dev_plus
+from MukeshRobot import LOGGER, dispatcher
+from MukeshRobot.modules.helper_funcs.chat_status import dev_plus
 
 
 @dev_plus

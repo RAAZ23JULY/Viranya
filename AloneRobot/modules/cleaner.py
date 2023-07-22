@@ -9,15 +9,15 @@ from telegram.ext import (
     run_async,
 )
 
-from AloneRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from AloneRobot.modules.disable import DisableAbleCommandHandler
-from AloneRobot.modules.helper_funcs.chat_status import (
+from MukeshRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from AloneRobot.modules.sql import cleaner_sql as sql
+from MukeshRobot.modules.sql import cleaner_sql as sql
 
 CMD_STARTERS = ("/", "!") if ALLOW_EXCL else "/"
 BLUE_TEXT_CLEAN_GROUP = 13
@@ -227,8 +227,6 @@ __help__ = """
  ❍ /ignoreblue <ᴡᴏʀᴅ>*:* ᴘʀᴇᴠᴇɴᴛ ᴀᴜᴛᴏ ᴄʟᴇᴀɴɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
  ❍ /unignoreblue <ᴡᴏʀᴅ>*:* ʀᴇᴍᴏᴠᴇ ᴘʀᴇᴠᴇɴᴛ ᴀᴜᴛᴏ ᴄʟᴇᴀɴɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
  ❍ /listblue *:* ʟɪsᴛ ᴄᴜʀʀᴇɴᴛʟʏ ᴡʜɪᴛᴇʟɪsᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅs
-
-☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("cleanblue", set_blue_text_must_click)
@@ -253,7 +251,7 @@ dispatcher.add_handler(REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER)
 dispatcher.add_handler(LIST_CLEAN_BLUE_TEXT_HANDLER)
 dispatcher.add_handler(CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP)
 
-__mod_name__ = "♨️ᴄʟᴇᴀɴ♨️"
+__mod_name__ = "✰ᴄʟᴇᴀɴ✰"
 __handlers__ = [
     SET_CLEAN_BLUE_TEXT_HANDLER,
     ADD_CLEAN_BLUE_TEXT_HANDLER,

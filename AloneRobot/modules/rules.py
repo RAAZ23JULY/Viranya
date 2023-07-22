@@ -12,10 +12,10 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import escape_markdown
 
-import AloneRobot.modules.sql.rules_sql as sql
-from AloneRobot import dispatcher
-from AloneRobot.modules.helper_funcs.chat_status import connection_status, user_admin
-from AloneRobot.modules.helper_funcs.string_handling import markdown_parser
+import MukeshRobot.modules.sql.rules_sql as sql
+from MukeshRobot import dispatcher
+from MukeshRobot.modules.helper_funcs.chat_status import connection_status, user_admin
+from MukeshRobot.modules.helper_funcs.string_handling import markdown_parser
 
 
 @connection_status
@@ -71,7 +71,7 @@ def send_rules(update, chat_id, from_pm=False, dest_chat=None):
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʀᴜʟᴇs •",
+                            text="•✰ʀᴜʟᴇs✰",
                             url=f"t.me/{bot.username}?start={chat_id}",
                         ),
                     ],
@@ -159,11 +159,9 @@ __help__ = """
 *Admins only:*
  ‣ `/setrules <your rules here>`*:* set the rules for this chat.
  ‣ `/clearrules`*:* clear the rules for this chat.
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "⚡Rᴜʟᴇs⚡"
+__mod_name__ = "✰ʀᴜʟᴇs✰"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules)
 SET_RULES_HANDLER = CommandHandler("setrules", set_rules)

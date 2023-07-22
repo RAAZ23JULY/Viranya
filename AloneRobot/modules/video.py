@@ -11,7 +11,7 @@ from pyrogram.types import Message
 from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 
-from AloneRobot import pbot
+from MukeshRobot import pbot
 
 
 def get_file_extension_from_url(url):
@@ -105,9 +105,7 @@ async def ytmusic(client, message: Message):
             os.remove(files)
 
 
-__mod_name__ = "⚡ᴠɪᴅᴇᴏ⚡"
+__mod_name__ = "✰ᴠɪᴅᴇᴏ✰"
 __help_ = """ 
 /video to download video song
-/vsong to download video song 
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆"""
+/vsong to download video song """

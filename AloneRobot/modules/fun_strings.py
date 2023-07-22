@@ -1,20 +1,20 @@
 RUN_STRINGS = (
     "Now you see me, now you don't." "ε=ε=ε=ε=┌(;￣▽￣)┘",
     "Get back here!",
-    "HURRRRRRRRRRRRRRRRRRR!!!!!!!",
-    "JHINGALALAHURRHURRRRRRR!",
-    "Mujhe akele chorke mat jaao 🥺!!",
-    "Let me love you, baby!",
-    "HULLALALALALALA!",
-    "JALDI WAHA SE HATO",
-    "*Tum log waha mat raho*",
-    "*Mahesh dalllle*",
-    "Kripya mujhe ignore karein or payein gand me jane ka mauka!",
-    "Pyaasi pyaasi mar jaungi aise mujhe aise tadpana .",
-    "Na kar na kar jara bhi fikar 💣💣",
-    "Aja tujhe heaven dikhaungi.",
-    "Godi lelo please.",
-    "Tum log apne boundary pe raho.",
+    "REEEEEEEEEEEEEEEEEE!!!!!!!",
+    "Look out for the wall!",
+    "Don't leave me alone with them!!",
+    "You've got company!",
+    "Chotto matte!",
+    "Yare yare daze",
+    "*Naruto run activated*",
+    "*Nezuko run activated*",
+    "Hey take responsibilty for what you just did!",
+    "May the odds be ever in your favour.",
+    "Run everyone, they just dropped a bomb 💣💣",
+    "And they disappeared forever, never to be seen again.",
+    "Legend has it, they're still running.",
+    "Hasta la vista, baby.",
     "Ah, what a waste. I liked that one.",
     "As The Doctor would say... RUN!",
 )
@@ -25,7 +25,7 @@ GIFS = [
     "CgACAgUAAx0CU_rCTAABAjdSX1s3fq5iEJ64YeQLKI8cD7CSuSEAAlUBAAJu09hW5iqWB0hTPD4bBA",
 ]
 
-SLAP_ALONE_TEMPLATES = (
+SLAP_MUKESH_TEMPLATES = (
     "Slap me one more time and I'll mute you.",
     "Stop slapping me. REEEEEEEEEEEEEE.",
     [
@@ -192,7 +192,7 @@ PAT_STICKERS = (
     "CAACAgQAAxkBAALRXF9Xs6XmIeDbnoL1wiDky0TdX-CvAAKKAQAC1TMzC9A3CtiT2rqVGwQ",
 )
 
-PING_STRING = ("ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ! 🖤",)
+PING_STRING = ("ᴀʟᴏɴᴇ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ! 🖤",)
 
 ITEMS = (
     "cast iron skillet",

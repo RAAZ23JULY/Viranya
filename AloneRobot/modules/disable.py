@@ -12,9 +12,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
-from AloneRobot import dispatcher
-from AloneRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from AloneRobot.modules.helper_funcs.misc import is_module_loaded
+from MukeshRobot import dispatcher
+from MukeshRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from MukeshRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -23,12 +23,12 @@ if is_module_loaded(FILENAME):
 
     from telegram.ext.dispatcher import run_async
 
-    from AloneRobot.modules.helper_funcs.chat_status import (
+    from MukeshRobot.modules.helper_funcs.chat_status import (
         connection_status,
         is_user_admin,
         user_admin,
     )
-    from AloneRobot.modules.sql import disable_sql as sql
+    from MukeshRobot.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
@@ -162,7 +162,7 @@ if is_module_loaded(FILENAME):
         args = context.args
         chat = update.effective_chat
         if len(args) >= 1:
-            disable_module = "AloneRobot.modules." + args[0].rsplit(".", 1)[0]
+            disable_module = "MukeshRobot.modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(disable_module)
@@ -237,7 +237,7 @@ if is_module_loaded(FILENAME):
         chat = update.effective_chat
 
         if len(args) >= 1:
-            enable_module = "AloneRobot.modules." + args[0].rsplit(".", 1)[0]
+            enable_module = "MukeshRobot.modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(enable_module)
@@ -348,11 +348,9 @@ if is_module_loaded(FILENAME):
     ❍ /enablemodule <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>*:* ᴇɴᴀʙʟᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ɪɴ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ
     ❍ /disablemodule <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>*:* ᴅɪsᴀʙʟᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ɪɴ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ
     ❍ /listcmds*:* ʟɪsᴛ ᴀʟʟ ᴘᴏssɪʙʟᴇ ᴛᴏɢɢʟᴇᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs
-
-☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆
     """
 
-    __mod_name__ = " ♨️Dɪsᴀʙʟᴇ♨️"
+    __mod_name__ = "✰ᴅɪsᴀʙʟᴇ✰"
 
 else:
     DisableAbleCommandHandler = CommandHandler

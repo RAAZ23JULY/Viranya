@@ -12,11 +12,11 @@ from telegram.ext import (
     run_async,
 )
 
-import AloneRobot.modules.sql.users_sql as sql 
-from AloneRobot import pbot as app
-from AloneRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from AloneRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from AloneRobot.modules.sql.users_sql import get_all_users
+import MukeshRobot.modules.sql.users_sql as sql 
+from MukeshRobot import pbot as app
+from MukeshRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from MukeshRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from MukeshRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
@@ -159,7 +159,7 @@ def chat_checker(update: Update, context: CallbackContext):
 
 
 def __user_info__(user_id):
-    if user_id in [777000, 1087968824]:
+    if user_id in [6079943111]:
         return """<b>➻ ᴄᴏᴍᴍᴏɴ ᴄʜᴀᴛs:</b> <code>???</code>"""
     if user_id == dispatcher.bot.id:
         return """<b>➻ ᴄᴏᴍᴍᴏɴ ᴄʜᴀᴛs:</b> <code>???</code>"""
@@ -250,5 +250,5 @@ dispatcher.add_handler(BROADCAST_HANDLER)
 dispatcher.add_handler(CHATLIST_HANDLER)
 dispatcher.add_handler(CHAT_CHECKER_HANDLER, CHAT_GROUP)
 
-__mod_name__ = "⚡ᴜsᴇʀs⚡"
+__mod_name__ = "✰ᴜsᴇʀs✰"
 __handlers__ = [(USER_HANDLER, USERS_GROUP), BROADCAST_HANDLER, CHATLIST_HANDLER]

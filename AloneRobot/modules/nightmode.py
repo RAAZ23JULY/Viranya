@@ -1,10 +1,10 @@
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from telethon import functions, types
 from telethon.tl.types import ChatBannedRights
-from AloneRobot import BOT_NAME
-from AloneRobot import telethn as tbot
-from AloneRobot.events import register
-from AloneRobot.modules.sql.night_mode_sql import (
+from MukeshRobot import BOT_NAME
+from MukeshRobot import telethn as tbot
+from MukeshRobot.events import register
+from MukeshRobot.modules.sql.night_mode_sql import (
     add_nightmode,
     get_all_chat_id,
     is_nightmode_indb,
@@ -157,8 +157,6 @@ __help__ = """
  ❍ /rmnight *:* ʀᴇᴍᴏᴠᴇs ɢʀᴏᴜᴘ ғʀᴏᴍ ɴɪɢʜᴛᴍᴏᴅᴇ ᴄʜᴀᴛs
 
 *ɴᴏᴛᴇ:* ɴɪɢʜᴛ ᴍᴏᴅᴇ ᴄʜᴀᴛs ɢᴇᴛ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴄʟᴏsᴇᴅ ᴀᴛ 12 ᴀᴍ(ɪsᴛ) ᴀɴᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴏᴘᴇɴɴᴇᴅ ᴀᴛ 6 ᴀᴍ(ɪsᴛ) ᴛᴏ ᴘʀᴇᴠᴇɴᴛ ɴɪɢʜᴛ sᴘᴀᴍs.
-
-☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "⚡Nɪɢʜᴛ⚡"
+__mod_name__ = "✰ɴɪɢʜᴛ​✰"

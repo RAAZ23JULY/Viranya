@@ -1,9 +1,9 @@
 import flag
 from countryinfo import CountryInfo
 
-from AloneRobot import BOT_USERNAME
-from AloneRobot import telethn as borg
-from AloneRobot.events import register
+from MukeshRobot import BOT_USERNAME
+from MukeshRobot import telethn as borg
+from MukeshRobot.events import register
 
 
 @register(pattern="^/country (.*)")
@@ -16,7 +16,7 @@ async def msg(event):
     try:
         a = country.info()
     except:
-        await event.reply("country information")
+        await event.reply("Country Not Available Currently")
     name = a.get("name")
     bb = a.get("altSpellings")
     hu = ""
@@ -98,7 +98,7 @@ async def msg(event):
 <b>ᴛᴏᴛᴀʟ ʟᴇᴠᴇʟ ᴅᴏᴍᴀɪɴ :</b> {lanester}
 <b>ᴡɪᴋɪᴘᴇᴅɪᴀ:</b> {wiki}
 
-<u>ɪɴғᴏʀᴍᴀᴛɪᴏɴ ɢᴀᴛʜᴇʀᴇᴅ ʙʏ {BOT_USERNAME}</u>
+<u>ɪɴғᴏʀᴍᴀᴛɪᴏɴ ɢᴀᴛʜᴇʀᴇᴅ ʙʏ @{BOT_USERNAME}</u>
 """
 
     await borg.send_message(
@@ -112,9 +112,7 @@ async def msg(event):
 __help__ = """
 ɪ ᴡɪʟʟ ɢɪᴠᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴄᴏᴜɴᴛʀʏ
 
- ❍ /ᴄᴏᴜɴᴛʀʏ <ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ>*:* ɢᴀᴛʜᴇʀɪɴɢ ɪɴғᴏ ᴀʙᴏᴜᴛ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛʀʏ
+ ❍ /country <ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ>*:* ɢᴀᴛʜᴇʀɪɴɢ ɪɴғᴏ ᴀʙᴏᴜᴛ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛʀʏ
+"""
 
-
-☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆"""
-
-__mod_name__ = "♨️Cᴏᴜɴᴛʀʏ♨️"
+__mod_name__ = "✰ᴄᴏᴜɴᴛʀʏ✰"

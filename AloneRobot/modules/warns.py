@@ -25,26 +25,26 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from AloneRobot import TIGERS, WOLVES, dispatcher
-from AloneRobot.modules.disable import DisableAbleCommandHandler
-from AloneRobot.modules.helper_funcs.chat_status import (
+from MukeshRobot import TIGERS, WOLVES, dispatcher
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from AloneRobot.modules.helper_funcs.extraction import (
+from MukeshRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from AloneRobot.modules.helper_funcs.filters import CustomFilters
-from AloneRobot.modules.helper_funcs.misc import split_message
-from AloneRobot.modules.helper_funcs.string_handling import split_quotes
-from AloneRobot.modules.log_channel import loggable
-from AloneRobot.modules.sql import warns_sql as sql
-from AloneRobot.modules.sql.approve_sql import is_approved
+from MukeshRobot.modules.helper_funcs.filters import CustomFilters
+from MukeshRobot.modules.helper_funcs.misc import split_message
+from MukeshRobot.modules.helper_funcs.string_handling import split_quotes
+from MukeshRobot.modules.log_channel import loggable
+from MukeshRobot.modules.sql import warns_sql as sql
+from MukeshRobot.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
@@ -124,7 +124,7 @@ def warn(
             [
                 [
                     InlineKeyboardButton(
-                        "📍ʀᴇᴍᴏᴠᴇ📍",
+                        "✨ ʀᴇᴍᴏᴠᴇ ✨",
                         callback_data="rm_warn({})".format(user.id),
                     ),
                 ],
@@ -524,11 +524,9 @@ __help__ = """
  ❍ `/nowarn <ᴋᴇʏᴡᴏʀᴅ>`*:* sᴛᴏᴘ ᴀ ᴡᴀʀɴɪɴɢ ғɪʟᴛᴇʀ
  ❍ `/warnlimit <ɴᴜᴍ>`*:* sᴇᴛ ᴛʜᴇ ᴡᴀʀɴɪɴɢ ʟɪᴍɪᴛ
  ❍ `/strongwarn <ᴏɴ/ʏᴇs/ᴏғғ/ɴᴏ>`*:* ɪғ sᴇᴛ ᴛᴏ ᴏɴ, ᴇxᴄᴇᴇᴅɪɴɢ ᴛʜᴇ ᴡᴀʀɴ ʟɪᴍɪᴛ ᴡɪʟʟ ʀᴇsᴜʟᴛ ɪɴ ᴀ ʙᴀɴ. ᴇʟsᴇ, ᴡɪʟʟ ᴊᴜsᴛ ᴘᴜɴᴄʜ.
-
-☆............𝙱𝚈 » [Villan](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "⚡Wᴀʀɴs⚡"
+__mod_name__ = "⍟ Wᴀʀɴs ⍟"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.group)
 RESET_WARN_HANDLER = CommandHandler(

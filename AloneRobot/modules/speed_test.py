@@ -2,9 +2,9 @@ import speedtest
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
-from AloneRobot import DEV_USERS, dispatcher
-from AloneRobot.modules.disable import DisableAbleCommandHandler
-from AloneRobot.modules.helper_funcs.chat_status import dev_plus
+from MukeshRobot import DEV_USERS, dispatcher
+from MukeshRobot.modules.disable import DisableAbleCommandHandler
+from MukeshRobot.modules.helper_funcs.chat_status import dev_plus
 
 
 def convert(speed):
@@ -62,10 +62,8 @@ dispatcher.add_handler(SPEED_TEST_CALLBACKHANDLER)
 
 __help__ = """
 » /speedtest *:* ʀᴜɴs ᴀ sᴘᴇᴇᴅᴛᴇsᴛ ᴀɴᴅ ᴄʜᴇᴄᴋ ᴛʜᴇ sᴇʀᴠᴇʀ sᴘᴇᴇᴅ.
-
-☆............𝙱𝚈 » [VIRANYA](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "⚡SᴘᴇᴇᴅTᴇsᴛ⚡​"
+__mod_name__ = "✰sᴘᴇᴇᴅᴛᴇsᴛ✰​"
 __command_list__ = ["speedtest"]
 __handlers__ = [SPEED_TEST_HANDLER, SPEED_TEST_CALLBACKHANDLER]

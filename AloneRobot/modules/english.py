@@ -5,7 +5,7 @@ from PyDictionary import PyDictionary
 from telethon import *
 from telethon.tl.types import *
 
-from AloneRobot.events import register
+from MukeshRobot.events import register
 
 API_KEY = "6ae0c3a0-afdc-4532-a810-82ded0054236"
 URL = "http://services.gingersoftware.com/Ginger/correct/json/GingerTheText"
@@ -80,8 +80,6 @@ __help__ = """
  ❍ /spell *:* ᴡʜɪʟᴇ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ, ᴡɪʟʟ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴀ ɢʀᴀᴍᴍᴀʀ ᴄᴏʀʀᴇᴄᴛᴇᴅ ᴠᴇʀsɪᴏɴ
  ❍ /synonyms  <ᴡᴏʀᴅ>*:* ғɪɴᴅ ᴛʜᴇ sʏɴᴏɴʏᴍs ᴏғ ᴀ ᴡᴏʀᴅ
  ❍ /antonyms  <ᴡᴏʀᴅ>*:* ғɪɴᴅ ᴛʜᴇ ᴀɴᴛᴏɴʏᴍs ᴏғ ᴀ ᴡᴏʀᴅ
-
-☆............𝙱𝚈 » [Villain](https://t.me/@Epicstarr)............☆
 """
 
-__mod_name__ = "♨️Eɴɢʟɪsʜ♨️"
+__mod_name__ = "✰ᴇɴɢʟɪsʜ✰"

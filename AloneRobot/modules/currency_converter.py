@@ -2,7 +2,7 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from AloneRobot import CASH_API_KEY, dispatcher
+from MukeshRobot import CASH_API_KEY, dispatcher
 
 
 @run_async
@@ -57,9 +57,7 @@ dispatcher.add_handler(CONVERTER_HANDLER)
 
 __command_list__ = ["cash"]
 __handlers__ = [CONVERTER_HANDLER]
-__mod_name__ = "♨️ᴄᴀsʜ♨️"
+__mod_name__ = "✰ᴄᴀsʜ✰"
 __help__ = """
- /ᴄᴀsʜ  ᴄᴏɴᴠᴇʀᴛ ᴇᴀᴄʜ ᴏᴛʜᴇʀ ᴄᴜʀʀᴇɴᴄʏ 
- /ᴄᴏɴᴠᴇʀᴛ ᴏʀ ᴛʀʏ 
- 
- ☆............𝙱𝚈 » [villain](https://t.me/@Epicstarr)............☆"""
+ /cash ᴄᴏɴᴠᴇʀᴛ ᴇᴀᴄʜ ᴏᴛʜᴇʀ ᴄᴜʀʀᴇɴᴄʏ 
+ /convert ᴏʀ ᴛʀʏ """
